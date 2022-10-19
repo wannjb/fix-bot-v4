@@ -5,11 +5,10 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
   let _type = (args[0] || '').toLowerCase()
 
 //------- NOMOR
-  let nowner = `${nomorown.split`@`[0]}@s.whatsapp.net`
+let nowner = `${nomorown.split`@`[0]}@s.whatsapp.net`
   let teksnomor = `${htki} *OWNER* ${htka}
 ✦ @${nomorown.split`@`[0]} ✦
 ------- ${nameown} -------
-
 📮 *Note:*
 • Owner tidak menerima save contact
 • Owner berhak blockir tanpa alasan
@@ -20,38 +19,37 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `${htki} *BIODATA* ${htka}
-${htjava} *💌 Nama* : WH-MODS-DEV
+${htjava} *💌 Nama* : Muhammad Kurniawan 
 ${htjava} *✉️ Nama RL* : HAMBA ALLAH
 ${htjava} *♂️ Gender* : Boys
 ${htjava} *🕋 Agama* : Islam
-${htjava} *⏰ Tanggal lahir* : Private 🥶
-${htjava} *🎨 Umur* : 18
-${htjava} *🧮 Kelas* : SUDAH TAMAT
-${htjava} *🧩 Hobby* : MODIFIKASI WHATSAPP "MODDER WHATSAPP"
-${htjava} *💬 Sifat* : ASIK DAH KALAU DAH KENAL
-${htjava} *🗺️ Tinggal* : Indo, Depok, Jawa Barat
-${htjava} *❤️ Waifu* : -
+${htjava} *⏰ Tanggal lahir* : Private
+${htjava} *🎨 Umur* : 15
+${htjava} *🧮 Kelas* : PRIVATE
+${htjava} *🧩 Hobby* : BADMINTON 
+${htjava} *💬 Sifat* : Cool 🥶💦
+${htjava} *🗺️ Tinggal* : Kalimantan utara 
+${htjava} *❤️ Waifu* : Hilda 🗿
 
 ${htjava} *📷 ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
 ${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${sgh}
 •·––––––––––––––––––––––––––·•
 `
-  let teks = 'Pilih dibawah kak ! o(〃＾▽＾〃)o'
+  let teks = 'Pilih dibawah Bre o(〃＾▽＾〃)o'
 const sections = [
    {
 	title: `${htjava} OWNER –––––––––·•`,
 	rows: [
-	{title: "📱 • Nomor Owner", rowId: ".owner nomor"},
-	{title: "📱 • Nomor Owner V2", rowId: ".whmods1"},
+	{title: "📱 • Nomor Owner", rowId: ".whmods1"},
+	{title: "📱 • Owner Tag", rowId: ".owner nomor"},
 	{title: "📱 • Pengembang", rowId: ".whmods2"},
-	{title: "📱 • Creator", rowId: ".whmods3"},
 	{title: "🎨 • Biodata", rowId: ".owner bio"},
 	{title: "🌎 • Script", rowId: ".sc"},
 	]
     },{
 	title: `${htjava} SUPPORT ME –––––––·•`,
 	rows: [
-	    {title: "💹 • Donasi", rowId: ".owner nomor"},
+	    {title: "💹 • Donasi", rowId: ".donasi"},
 	{title: "🔖 • Sewa", rowId: ".sewa"},
 	{title: "🌟 • Buy Premium", rowId: ".premium"},
 	]
@@ -62,7 +60,7 @@ const listMessage = {
   text: teks,
   footer: null,
   title: `${htki} *OWNER* ${htka}`,
-  buttonText: "Click Here !",
+  buttonText: "Klik Bre",
   sections
 }
 

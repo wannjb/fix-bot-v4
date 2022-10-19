@@ -276,7 +276,7 @@ const sections = [
     rows: [
         {title: `⚡ ${pmenus} SPEED BOT`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
         {title: `💌 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
-        {title: `⏰ ${pmenus} RUNTIME BOT`, rowId: ".runtime", description: "𝙼𝚎𝚗𝚊𝚖𝚙𝚒𝚕𝚔𝚊𝚗 Waktu Bot Berjalan"}, 
+        {title: `⏰ ${pmenus} RUNTIME BOT`, rowId: ".runtime", description: "Menampilkan  Waktu Bot Berjalan"}, 
         {title: `📔 ${pmenus} SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
     ]
       },{
@@ -330,7 +330,7 @@ let tek = `✧────···[ Dashboard ]···────✧
 ╭━━━━━━━━━━━━━━━━┈─✧
 ┴
 ┬
-│${emot} 「 Hai Kak👋 」
+│${emot} 「 Hai Bre👋 」
 ├❖ 「 ${conn.getName(m.sender)} 」
 ├❖  Bagaimana Harimu? 😄
 ├❖  Terima Kasih Telah Menggunakan Bot Kami
@@ -363,7 +363,7 @@ let tek = `✧────···[ Dashboard ]···────✧
 ┴ ▸ *ᴏᴡɴᴇʀ :* ${nameown}
 ✧
 ┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
-│ ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ ^ω^
+│ BERI JEDA BRE ^ω^
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
 │${emot} *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
@@ -375,7 +375,7 @@ const listMessage = {
   footer: `📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ${nameown}\n\n${botdate}\n\n${wm2}`,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `CLICK HERE ⎙`, 
+  buttonText: `CLICK BRE ⎙`, 
   sections
 }
   if (teks == '404') {
@@ -739,18 +739,18 @@ function clockStringP(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  let res = "Kok Belum Tidur Kak? 🥱"
+  let res = "Kok Belum Tidur Bre? 🥱"
   if (time >= 4) {
-    res = "Pagi Lord 🌄"
+    res = "Pagi Bre 🌄"
   }
   if (time >= 10) {
-    res = "Siang Lord ☀️"
+    res = "Siang Bre ☀️"
   }
   if (time >= 15) {
-    res = "Sore Lord 🌇"
+    res = "Sore Bre 🌇"
   }
   if (time >= 18) {
-    res = "Malam Lord 🌙"
+    res = "Malam Bre 🌙"
   }
   return res
 }

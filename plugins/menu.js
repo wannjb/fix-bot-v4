@@ -2,6 +2,6 @@
 
 
     // FIX MENU WHATSAPP BASE NEW DAN BAKAL EXPIRED SAAT MARK SUDAH FIX WHATSAPP UPDATE ENTAH VERSI BERAPA
-    // MAU YANG NO ENC fix-bot-v4 35K AJA , MINAT PC GW wa.me/6282127487538
+    // MAU YANG NO ENC fix-bot-v4 35K AJA , MINAT PC GW wa.me/62895327999292
 
     // mines info-tqto.js dan info-script.js tetep di enc, karena banyak yang menghapus credit + script

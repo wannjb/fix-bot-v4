@@ -24,7 +24,7 @@ if (!args[0]) throw `Use example ${usedPrefix}${command} https://www.tiktok.com/
 ────────── ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻ ──────────
 *Nickname:* ${nickname}
 *Description:* ${description}
-_©WH-MODS-BOT-V1🍭_
+_©WannTrue_
 `.trim(), m)
 }
 catch {
@@ -62,7 +62,7 @@ let p = await tiktok(args[0])
 *Nickname:* ${p.dev}
 *Description:* ${p.description}
 *Url:* ${p.url}
-_©WH-MODS-BOT-V1🍭_
+_©WannTrue_
 `.trim()
 conn.send2ButtonVid(m.chat, p.link, cap, author, `Donasi`, `.donasi`, `Audio`, `.tta ${args[0]}`, fakes, adReply)
 } catch (e) {

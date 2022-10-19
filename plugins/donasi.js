@@ -22,7 +22,7 @@ conn.sendButtonDoc(m.chat, str, wm,'Sewa Bot','.sewa', m, { contextInfo: { exter
     mediaType: "VIDEO",
     description: "https://vt.tiktok.com/ZSR4Kw2fP/", 
     title: 'WannTrue MultiDevice',
-    body: wm,
+    body: 'INSTAGRAM OFFICIAL',
     thumbnail: thumb,
     sourceUrl: sig
   }

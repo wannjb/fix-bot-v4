@@ -275,16 +275,16 @@ const sections = [
     title: `${htki} MAIN ${htka}`,
     rows: [
         {title: `⚡ ${pmenus} SPEED BOT`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
-        {title: `💌 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
+        {title: `🤴 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
         {title: `⏰ ${pmenus} RUNTIME BOT`, rowId: ".runtime", description: "Menampilkan  Waktu Bot Berjalan"}, 
-        {title: `📔 ${pmenus} SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
+        {title: `💌 ${pmenus} SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
     ]
       },{
         title: `${htki} SUPPORT ${htka}`,
         rows: [
-            {title: `🔖 ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
+            {title: `✍️ ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
             {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
-            {title: `💹 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
+            {title: `💸 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
         ]
         },{
           title: `${htki} MENU MENFESS ${htka}`,

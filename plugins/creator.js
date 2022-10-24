@@ -9,7 +9,7 @@ let nowner = `${nomorown.split`@`[0]}@s.whatsapp.net`
   let teksnomor = `${htki} *OWNER* ${htka}
 ✦ @${nomorown.split`@`[0]} ✦
 ------- ${nameown} -------
-📮 *Note:*
+📮 *Info:*
 • Owner tidak menerima save contact
 • Owner berhak blockir tanpa alasan
 • Berbicaralah yang sopan & tidak spam
@@ -41,7 +41,7 @@ const sections = [
 	title: `${htjava} OWNER –––––––––·•`,
 	rows: [
 	{title: "📱 • Nomor Owner", rowId: ".whmods1"},
-	{title: "📱 • Owner Tag", rowId: ".owner nomor"},
+	{title: "📱 • Info Owner Tag", rowId: ".owner nomor"},
 	{title: "📱 • Pengembang", rowId: ".whmods2"},
 	{title: "🎨 • Biodata", rowId: ".owner bio"},
 	{title: "🌎 • Script", rowId: ".sc"},

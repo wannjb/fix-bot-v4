@@ -143,7 +143,7 @@ global.botdate = `⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuw
 global.bottime = `T I M E : ${wktuwib}`
 global.titlebot = `⫹⫺ WhatsApp Bot | By WannTrue`
 global.packname = '☂︎ ᴄʀᴇᴀᴛᴇᴅ ʙʏ'
-global.author = '                「 W A N N • T R U E」'
+global.author = '                「WannTrue」'
 
 /*Fake*/
 global.fsizedoc = '1'.repeat(10)

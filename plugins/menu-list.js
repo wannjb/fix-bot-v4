@@ -290,11 +290,7 @@ const sections = [
           title: `${htki} MENU MENFESS ${htka}`,
           rows: [
             {title: `💬 ${pmenus} Menfess Balas`, rowId: ".? menbalas", description: "Menampilkan Semua command BOT"},
-          ]},{
-        title: `${htki} SHOP GAME - SEGERA❗ ${htka}`,
-        rows: [
-            {title: `💵 ${Y} TopUp GAME `, rowId: ".? menbalas", description: "TopUp Otomatis - Segera❗"},
-          ]},{
+          ]},{ 
         title: `${htki} MENU ${htka}`,
         rows: [
             {title: `💬 ${pmenus} All`, rowId: ".? all", description: "Menampilkan Semua command BOT"},

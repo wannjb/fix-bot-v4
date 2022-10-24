@@ -4,16 +4,16 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
   let type = (args[0] || '').toLowerCase()
   let _type = (args[0] || '').toLowerCase()
 
-//------- NOMOR
+//------- Tag
 let nowner = `${nomorown.split`@`[0]}@s.whatsapp.net`
   let teksnomor = `${htki} *OWNER* ${htka}
 ✦ @${nomorown.split`@`[0]} ✦
 ------- ${nameown} -------
-📮 *Info:*
+📮 *Rules:*
 • Owner tidak menerima save contact
 • Owner berhak blockir tanpa alasan
 • Berbicaralah yang sopan & tidak spam
-• Owner Hanya merespon yang berkaitan dengan BOT
+• Owner Juga menjual All Akun
 • No Telp`
 
 //------------ BIO
@@ -21,15 +21,15 @@ let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').
 let teksbio = `${htki} *BIODATA* ${htka}
 ${htjava} *💌 Nama* : Muhammad Kurniawan 
 ${htjava} *✉️ Nama RL* : HAMBA ALLAH
-${htjava} *♂️ Gender* : Boys
-${htjava} *🕋 Agama* : Islam
+${htjava} *♂️ Gender* : Pria ya Bukan Cowo :v
+${htjava} *🕋 Agama* : Muslim
 ${htjava} *⏰ Tanggal lahir* : Private
 ${htjava} *🎨 Umur* : 15
 ${htjava} *🧮 Kelas* : PRIVATE
 ${htjava} *🧩 Hobby* : BADMINTON 
 ${htjava} *💬 Sifat* : Cool 🥶💦
 ${htjava} *🗺️ Tinggal* : Kalimantan utara 
-${htjava} *❤️ Waifu* : Hilda 🗿
+${htjava} *❤️ Waifu* : Anya >///<
 
 ${htjava} *📷 ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
 ${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${sgh}
@@ -38,10 +38,10 @@ ${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${sgh}
   let teks = 'Pilih dibawah Bre o(〃＾▽＾〃)o'
 const sections = [
    {
-	title: `${htjava} OWNER –––––––––·•`,
+	title: `${htjava} OWNER WannTrue–––––––––·•`,
 	rows: [
 	{title: "📱 • Nomor Owner", rowId: ".whmods1"},
-	{title: "📱 • Info Owner Tag", rowId: ".owner nomor"},
+	{title: "📱 • Rules Owner Tag", rowId: ".owner nomor"},
 	{title: "📱 • Pengembang", rowId: ".whmods2"},
 	{title: "🎨 • Biodata", rowId: ".owner bio"},
 	{title: "🌎 • Script", rowId: ".sc"},

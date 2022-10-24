@@ -282,7 +282,7 @@ const sections = [
       },{
         title: `${htki} SUPPORT ${htka}`,
         rows: [
-            {title: `✍️ ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
+            {title: `✍️ • SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
             {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
             {title: `💸 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
         ]

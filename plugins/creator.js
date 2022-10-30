@@ -35,7 +35,15 @@ ${htjava} *📷 ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
 ${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${sgh}
 •·––––––––––––––––––––––––––·•
 `
-  let teks = 'Pilih dibawah Bre o(〃＾▽＾〃)o'
+  let teks = '*°*      ~_[NOTE]_~       *°*
+• Owner slow respon berarti sibuk!
+• Owner berhak memblokir tanpa alasan
+• Mengucapkan salam bagi umat muslim
+• Berbicaralah dengan sopan & tidak spam 
+• Anda tlpn Owner blok!
+~~~~~~~~~~~~~~~~~~~~~
+𐚀 Silakan Klik dibawah Bre
+           *o(〃＾▽＾〃)o*'
 const sections = [
    {
 	title: `${htjava} OWNER WannTrue–––––––––·•`,

@@ -35,7 +35,7 @@ ${htjava} *📷 ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
 ${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${sgh}
 •·––––––––––––––––––––––––––·•
 `
-  let teks = '*°*      ~_[NOTE]_~       *°*
+  let tek = '*°*      ~_[NOTE]_~       *°*
 • Owner slow respon berarti sibuk!
 • Owner berhak memblokir tanpa alasan
 • Mengucapkan salam bagi umat muslim

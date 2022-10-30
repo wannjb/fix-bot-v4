@@ -5,11 +5,11 @@ m.reply(wait)
     text,
     nama: conn.getName(m.sender),
     kelas: ' '
-  }, 'APIKEY'), 'nulis.jpg', 'Nulis aja malas, apa lagi kerja', m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+  }, 'APIKEY'), 'nulis.jpg', 'Nahhh sudah jadi...', m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
 
 }
 handler.help = new Array(6).fill('magernulis').map((v, i) => v + (i + 1) + ' <teks>')
-handler.tags = ['nulis', 'limitmenu']
+handler.tags = ['nulis']
 
 handler.command = /^magernulis[1-6]?$/i
 

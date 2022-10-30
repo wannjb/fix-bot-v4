@@ -275,8 +275,9 @@ const sections = [
     title: `${htki} MAIN ${htka}`,
     rows: [
         {title: `⚡ • SPEED BOT`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
+        {title: `❗ • RULES BOT`, rowId: ".runtime", description: "Menampilkan  Rules BOT"},
         {title: `🤴 • OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
-        {title: `⏰ • RUNTIME BOT`, rowId: ".runtime", description: "Menampilkan  Waktu Bot Berjalan"}, 
+        {title: `⏰ • RUNTIME BOT`, rowId: ".runtime", description: "Menampilkan  Waktu BOT Berjalan"}, 
         {title: `💌 • SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
     ]
       },{

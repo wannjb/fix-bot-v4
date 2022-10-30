@@ -6,7 +6,7 @@ let name = await conn.getName(who)
 
 
 if (command == 'whmods1') {
- let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:WhatsApp;Saya Owner WHMODS;Bot;;Md\nFN: WannTrue \nNICKNAME:👑 Owner WannTrue Bot\nORG:WH\nTITLE:MODS\nitem1.TEL;waid=62895327999292:+0\nitem1.X-ABLabel:📞 Nomor Owner\nitem2.URL:https://www.instagram.com/mhdkrnwnn_\nitem2.X-ABLabel:💬 More\nitem3.EMAIL;type=INTERNET:wanntrue@gmail.com\nitem3.X-ABLabel:💌 Mail Owner WannTrue BOT\nitem4.ADR:;;🇰🇷 Korea;;;;\nitem4.X-ABADR:💬 More\nitem4.X-ABLabel:📍 Lokasi Saya\nBDAY;value=date:🔖 KEPO LU YAH\nEND:VCARD`
+ let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;WannTrue;;;\nFN:WannTrue\nORG:WannTrue\nTITLE:\nitem1.TEL;waid=62895327999292:+62 80-0000-0000\nitem1.X-ABLabel:WannnTrue\nX-WA-BIZ-DESCRIPTION:${htjava} Jual ALL AKUN!!\nX-WA-BIZ-NAME:WannTrue\nEND:VCARD`
 const tag_own = await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard }] }}, { quoted: fakes })
 let caption = `👋 Hai Bre *@${who.split("@")[0]}*, Nih Owner *${conn.user.name}* :)`
     await conn.sendButton(m.chat, caption, author, null, [['🎀 Halo Owner WannTrue Bot', 'Huuu']], m, { quoted: tag_own, mentions: conn.parseMention(caption) })

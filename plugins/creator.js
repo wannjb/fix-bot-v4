@@ -48,7 +48,7 @@ const sections = [
    {
 	title: `${htjava} OWNER WannTrue–––––––––·•`,
 	rows: [
-	{title: "📱 • Nomor Owner", rowId: ".whmods1"},
+	{title: "📱 • *Nomor Owner*", rowId: ".whmods1"},
 	{title: "📱 • Rules Owner Tag", rowId: ".owner nomor"},
 	{title: "📱 • Pengembang", rowId: ".whmods2"},
 	{title: "🎨 • Biodata", rowId: ".owner bio"},

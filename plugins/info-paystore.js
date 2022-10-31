@@ -30,17 +30,17 @@ let info = `
 ╰═┅═━––––––๑
 
 *⫹⫺ PAYMENT:*
-• *Pulsa Telkomsel:* [${ppulsa}]
+• *Pulsa Tri:* [${ppulsa}]
 • *Dana:* [${pdana}]
 • *Gopay:* [${pgopay}]
 • *Ovo:* [${povo}]
 • *Link Aja:* [${plinkaja}]
 
 –––––– *🐾 Kebijakan* ––––––
-🗣️: Kak, Kok harganya mahal banget?
+🗣️: Bre, Kok harganya mahal banget?
 💬: Mau tawar menawar? boleh, silahkan chat owner aja
 
-🗣️: Scam ga nih kak?
+🗣️: Scam ga nih Bre?
 💬: Enggalah, Owner 100% Tepati janji #STAYHALAL
 
 ▌│█║▌║▌║║▌║▌║█│▌

@@ -17,15 +17,15 @@ Jika email saya kirim akun unchek melalu pesan email akan otomatis terkirim ke b
 Jika kalian ingin memakai SC saya?
 tentunya saya akan mendelete command akun uncheknya.
 *SILAKAN KLIK JENIS AKUN DIBAWAH INI*
-Ayo di pollow dulu 💪😼
-~*INSTAGRAM OFFICIAL*~
+ *┆* Ayo di pollow dulu 💪😼 *┆*
+*┆* *INSTAGRAM OFFICIAL*      *┆*
 *https://www.instagram.com/mhdkrnwnn_*
 
 ❏┳━━◩
 ┍┛
 ┆⟥⟤ ➠ (${global.bottime})
 └─┈⟅`
-let nth = `☰⟥⟝⟞⟝❨*UNCHEK RANDOM!*❩⟞⟝⟞⟤☰`
+let nth = `*-------- UNCHEK RANDOM! --------*`
 conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'Free Fire', '.nsfw neko', 'Mobile Legends', '.nsfw neko', 'Pubg', '.nsfw neko', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://wa.me//62895327999292',
     mediaType: 2, 

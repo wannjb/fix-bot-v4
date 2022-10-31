@@ -26,7 +26,7 @@ Ayo di pollow 💪😼
 ┆⟥⟤ ➠ (${global.bottime})
 └─┈⟅`
 let nth = `-----❨ *RANDOM UNCHEK!* ❩-----`
-conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'Owner', '.owner', 'FF', '.nsfw neko', 'ML', '.nsfw neko', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'Owner', '.owner', 'ML', '.nsfw neko', 'FF', '.nsfw neko', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://wa.me//62895327999292',
     mediaType: 2, 
     description: sgc,

@@ -281,6 +281,11 @@ const sections = [
         {title: `💌 • SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
     ]
       },{
+        title: `${htki} BONUS ${htka}`,
+        rows: [
+            {title: `🎮 • UNCHEK FREE`, rowId: ".akun", description: "Menampilkan rules akun unchek "},
+        ]
+      },{
         title: `${htki} SUPPORT ${htka}`,
         rows: [
             {title: `✍️ • SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},

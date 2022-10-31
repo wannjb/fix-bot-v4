@@ -14,11 +14,15 @@ let flaaa2 = [
 let rules = `unchek ini free dan ini terbukti unchek fress
 karena ini bot udah tehubung dengan email saya.
 Jika email saya kirim akun unchek melalu pesan email akan otomatis terkirim ke bot ini!.
+Unchek ini otomatis hilang dan fresh kembali jika sudah melewati 24 jam!.
+_*ALASAN SAYA MENGATAKAN RANDOM UNCHEK!!!*_
+➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠
 Jika kalian ingin memakai SC saya?
 tentunya saya akan mendelete command akun uncheknya.
 Ayo di pollow 💪😼
 *INSTAGRAM OFFICIAL*
 *https://www.instagram.com/mhdkrnwnn_*
+➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠
 *SILAKAN KLIK JENIS AKUN DIBAWAH INI*
 
 ❏┳━━◩

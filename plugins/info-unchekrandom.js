@@ -11,37 +11,32 @@ let flaaa2 = [
 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=800&scaleHeight=500&text=',
 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text=']
-let rules = ` unchek ini free dan ini terbukti unchek fress
+let rules = `unchek ini free dan ini terbukti unchek fress
 karena ini bot udah tehubung dengan email saya.
 Jika email saya kirim akun unchek melalu pesan email akan otomatis terkirim ke bot ini!.
 Jika kalian ingin memakai SC saya?
 tentunya saya akan mendelete command akun uncheknya.
 *SILAKAN KLIK JENIS AKUN DIBAWAH INI*
- 
-Ayo di pollow dulu 💪😼 ⬇️
-
-         *INSTAGRAM OFFICIAL*
-*https://www.instagram.com/mhdkrnwnn_*
 
 ❏┳━━◩
 ┍┛
-┆⟥⟤ ➠ (${.bottime})
+┆⟥⟤ ➠ (${global.bottime})
 └─┈⟅`
-let nth = `*-------- UNCHEK RANDOM! --------*`
-conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'Owner 😼', '.owner', 'Free Fire', '.nsfw neko', 'Mobile Legends', '.nsfw neko', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://wa.me//62895327999292',
+let nth = `☰⟥⟝⟞⟝❨ *Akun * ❩⟞⟝⟞⟤☰`
+conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, Rules, 'FreeFire', '.nsfw neko', 'Mobile Legends', '.nsfw neko', 'Pubg', '.nsfw neko', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: 'https://www.instagram.com/mhdkrnwnn_',
     mediaType: 2, 
     description: sgc,
-    title: "Mau sc order di sini!!!",
+    title: "Ayo di pollow Instagram saya 😼💪",
     body: wm,
-    thumbnail: fs.readFileSync('./media/qr.png'),
-    sourceUrl: 'https://wa.me//62895327999292',
+    thumbnail: fs.readFileSync('./media/ig.png'),
+    sourceUrl: 'https://www.instagram.com/mhdkrnwnn_',
      }}
   })
 }
-handler.help = ['akun', 'allakun']
-handler.tags = ['akun', 'premium']
-handler.command = /^(akun|allakun)/i
+handler.help = ['akun']
+handler.tags = ['allakun']
+handler.command = /^(akun)$/i
 
 export default handler
 

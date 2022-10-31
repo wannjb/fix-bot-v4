@@ -7,6 +7,7 @@ let str = `*https://Instagram.com/mhdkrnwnn_*
 Pengen Scriptnya ?
 Ada bre, santai...
 https://github.com/WH-MODS-BOT/fix-bot-v3
+Script di atas berbeda sama saya punya 
 
 Pengen ubah owner V2?
 Jika mau ubah owner V2 menjadi nomor owner kamu

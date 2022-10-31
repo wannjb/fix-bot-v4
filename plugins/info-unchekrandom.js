@@ -28,7 +28,7 @@ Ayo di pollow dulu 💪😼 ⬇️
 ┆⟥⟤ ➠ (${.bottime})
 └─┈⟅`
 let nth = `*-------- UNCHEK RANDOM! --------*`
-conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'Free Fire', '.nsfw neko', 'Mobile Legends', '.nsfw neko', 'Pubg', '.nsfw neko', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'Owner 😼', '.owner', 'Free Fire', '.nsfw neko', 'Mobile Legends', '.nsfw neko', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://wa.me//62895327999292',
     mediaType: 2, 
     description: sgc,

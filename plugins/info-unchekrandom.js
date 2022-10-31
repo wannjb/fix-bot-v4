@@ -22,8 +22,8 @@ tentunya saya akan mendelete command akun uncheknya.
 ┍┛
 ┆⟥⟤ ➠ (${global.bottime})
 └─┈⟅`
-let nth = `☰⟥⟝⟞⟝❨ *Akun * ❩⟞⟝⟞⟤☰`
-conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, Rules, 'FreeFire', '.nsfw neko', 'Mobile Legends', '.nsfw neko', 'Pubg', '.nsfw neko', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+let nth = `-------- *Unchek Random* --------`
+conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, Akun, 'FreeFire', '.nsfw neko', 'Mobile Legends', '.nsfw neko', 'Pubg', '.nsfw neko', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://www.instagram.com/mhdkrnwnn_',
     mediaType: 2, 
     description: sgc,

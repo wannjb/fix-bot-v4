@@ -16,27 +16,30 @@ karena ini bot udah tehubung dengan email saya.
 Jika email saya kirim akun unchek melalu pesan email akan otomatis terkirim ke bot ini!.
 Jika kalian ingin memakai SC saya?
 tentunya saya akan mendelete command akun uncheknya.
+Ayo di pollow 💪😼
+*INSTAGRAM OFFICIAL*
+*https://www.instagram.com/mhdkrnwnn_*
 *SILAKAN KLIK JENIS AKUN DIBAWAH INI*
 
 ❏┳━━◩
 ┍┛
 ┆⟥⟤ ➠ (${global.bottime})
 └─┈⟅`
-let nth = `-------- *Unchek Random* --------`
-conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, Akun, 'FreeFire', '.nsfw neko', 'Mobile Legends', '.nsfw neko', 'Pubg', '.nsfw neko', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://www.instagram.com/mhdkrnwnn_',
+let nth = `☰⟥⟝⟞⟝❨ *Rᴜʟᴇs Bᴏᴛ!* ❩⟞⟝⟞⟤☰`
+conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'Free Fire', '.nsfw neko', 'Mobile Legends', '.nsfw neko', 'Pubg', '.nsfw neko', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: 'https://wa.me//62895327999292',
     mediaType: 2, 
     description: sgc,
-    title: "Ayo di pollow Instagram saya 😼💪",
+    title: "Sᴇᴡᴀ Cᴇᴋ Dɪsɪɴɪ Cᴜʏ!!!",
     body: wm,
-    thumbnail: fs.readFileSync('./media/ig.png'),
-    sourceUrl: 'https://www.instagram.com/mhdkrnwnn_',
+    thumbnail: fs.readFileSync('./media/qr.png'),
+    sourceUrl: 'https://wa.me//62895327999292',
      }}
   })
 }
-handler.help = ['akun']
-handler.tags = ['allakun']
-handler.command = /^(akun)$/i
+handler.help = ['rules']
+handler.tags = ['info']
+handler.command = /^(rules)$/i
 
 export default handler
 

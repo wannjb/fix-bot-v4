@@ -25,7 +25,7 @@ Ayo di pollow 💪😼
 ┍┛
 ┆⟥⟤ ➠ (${global.bottime})
 └─┈⟅`
-let nth = `☰⟥⟝⟞⟝❨ *Rᴜʟᴇs Bᴏᴛ!* ❩⟞⟝⟞⟤☰`
+let nth = `-----❨ *RANDOM UNCHEK!* ❩-----`
 conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'Free Fire', '.nsfw neko', 'Mobile Legends', '.nsfw neko', 'Pubg', '.nsfw neko', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://wa.me//62895327999292',
     mediaType: 2, 
@@ -37,9 +37,9 @@ conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`
      }}
   })
 }
-handler.help = ['rules']
-handler.tags = ['info']
-handler.command = /^(rules)$/i
+handler.help = ['akun']
+handler.tags = ['allakun']
+handler.command = /^(akun)$/i
 
 export default handler
 

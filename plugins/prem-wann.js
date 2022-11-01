@@ -123,7 +123,7 @@ const listMessage = {
 
 //------------ CASE AKUN ! ------------
   try {
-    if (/(akun)/i.test(command)) {
+    if (/(kontol)/i.test(command)) {
       const count = args[1] && args[1].length > 0 ? Math.min(99999999, Math.max(parseInt(args[1]), 1)) : !args[1] || args.length < 3 ? 1 : Math.min(1, count)
         switch (type) {
 case 'ahegao':
@@ -423,8 +423,8 @@ default:
 
 }
 
-handler.help = ['akun <type>']
-handler.tags = ['akun', 'premium']
-handler.command = /^(akun)/i
+handler.help = ['kontol <type>']
+handler.tags = ['kontol', 'premium']
+handler.command = /^(kontol)/i
 
 export default handler

@@ -49,6 +49,6 @@ await conn.sendMessage(m.chat, listMessage)
 
 handler.help = ['soya', 'susus']
 handler.tags = ['main']
-handler.command = /^(soya(susus)?|soyay)$/i
+handler.command = /^(soya(soyay)?|susus)$/i
 
 export default handler

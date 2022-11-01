@@ -38,7 +38,7 @@ ${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${sgh}
   let teks = 'Pilih dibawah Bre ! *o(〃＾▽＾〃)o*'
 const sections = [
    {
-	title: `${htjava} OWNER WannTrue–––––––––·•`,
+	title: `${htjava} OWNER WannTrue –––––––––·•`,
 	rows: [
 	{title: "📱 • Nomor Owner", rowId: ".whmods1"},
 	{title: "📱 • Rules Owner Tag", rowId: ".owner nomor"},

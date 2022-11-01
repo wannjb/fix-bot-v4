@@ -15,7 +15,8 @@ let ppm = '70'
 let info = `
 ╭━━━━「 *NOTE* 」
 ┊ *UNCHEK INI KHUSUS USER PREMIUM!*
-┊ *HARAP HUBUNGI OWNER UNTUK MEMBELI PREMIUM! 📞*
+┊ *HARAP HUBUNGI OWNER* 
+┊ *UNTUK MEMBELI PREMIUM! 📞*
 ╰═┅═━––––––๑
 
 *⫹⫺ PAYMENT:*
@@ -39,7 +40,6 @@ const sections = [
 const listMessage = {
   text: info,
   footer: botdate,
-  title: wm,
   buttonText: "Click Bre!",
   sections
 }

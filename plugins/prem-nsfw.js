@@ -105,7 +105,7 @@ const sections = [
    {
 	title: '◤◢◣◥◤◢◣◥◤◢◣◥◤◢◣◥◤◢◣◥◤◢◣◥◤◢◣◥◤◢◣◥',
 	rows: [
-	{title: `${(ch == true ? false : ahegao) == true ? p : f}` + "A • Wann", rowId: ".nsfw ahegao"},
+	{title: `${(ch == true ? false : ahegao) == true ? p : f}` + "A • ahegao", rowId: ".nsfw ahegao"},
 	{title: `${(ch == true ? false : anal) == true ? p:f}` + "A • Anal", rowId: ".nsfw anal"},
 	{title: `${(ch == true ? false : ass) == true ? p:f}` + "A • Ass", rowId: ".nsfw ass"},
 	{title: `${(ch == true ? false : blowjob) == true ? p:f}` + "B • BlowJob", rowId: ".nsfw blowjob"},

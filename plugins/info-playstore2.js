@@ -14,25 +14,25 @@ let pv = '50'
 let ppm = '70'
 let info = `
 ╭━━━━「 *NOTE* 」
-┊ *UNCHEK INI KHUSUS USER PREMIUM!*
-┊ *HARAP HUBUNGI OWNER* 
-┊ *UNTUK MEMBELI PREMIUM! 📞*
+┊ *UNCHEK INI KHUSUS USER PREMIUM!* 👑
+┊ *HARAP HUBUNGI OWNER* 📞
+┊ *UNTUK MEMBELI PREMIUM!* 🤝
 ╰═┅═━––––––๑
 
-*⫹⫺ PAYMENT:*
-• DANA
-• OVO
-• GOPAY 
-• PULSA
+*⫹⫺ PAYMENT:* 💰
+• DANA 💳
+• OVO 💳
+• GOPAY 💳
+• PULSA 📱
 
-▌│█║▌║▌║║▌║▌║█│▌
+_*SILAKAN KLIK DIBAWAH BRE (⁠つ⁠≧⁠▽⁠≦⁠)⁠つ*_
 `
 const sections = [
    {
 	title: `${htjava} MENU ✦-------`,
 	rows: [
-	    {title: "🌟 PREMIUM", rowId: '.order *Paket:* PREMIUM', description: "Menampilkan List Harga Premium"},
-	    {title: "👑 OWNER", rowId: '.order *Paket:* OWNER', description: "Menampilkan List Owner Bot"},
+	    {title: "🌟 PREMIUM", rowId: '.premium *Paket:* PREMIUM', description: "Menampilkan List Harga Premium"},
+	    {title: "👑 OWNER", rowId: '.owner *Paket:* OWNER', description: "Menampilkan List Owner Bot"},
 	]
     },
 ]

@@ -30,7 +30,7 @@ Ayo di pollow 💪😼
 ┆⟥⟤ ➠ (${global.bottime})
 └─┈⟅`
 let nth = `-----❨ *RANDOM UNCHEK!* ❩-----`
-conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'FACEBOOK', '.soya', 'GOOGLE', '.soya', 'Owner', '.owner', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'GOOGLE', '.soya', 'FACEBOOK', '.soya', 'Owner', '.owner', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://wa.me//62895327999292',
     mediaType: 2, 
     description: sgc,

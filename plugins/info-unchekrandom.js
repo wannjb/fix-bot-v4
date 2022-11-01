@@ -23,14 +23,14 @@ Ayo di pollow 💪😼
 *INSTAGRAM OFFICIAL*
 *https://www.instagram.com/mhdkrnwnn_*
 ➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠➠
-*SILAKAN KLIK JENIS AKUN DIBAWAH INI*
+*SILAKAN KLIK JENIS LOGIN DIBAWAH INI*
 
 ❏┳━━◩
 ┍┛
 ┆⟥⟤ ➠ (${global.bottime})
 └─┈⟅`
 let nth = `-----❨ *RANDOM UNCHEK!* ❩-----`
-conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'FF', '.soya', 'ML', '.soya', 'Owner', '.owner', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'FACEBOOK', '.soya', 'GOOGLE', '.soya', 'Owner', '.owner', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://wa.me//62895327999292',
     mediaType: 2, 
     description: sgc,

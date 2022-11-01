@@ -13,7 +13,7 @@ let pp = '40'
 let pv = '50'
 let ppm = '70'
 let info = `
-╭━━━━「 *NOTE* 」
+╭━━━━「 *NOTE📮* 」
 ┊ *UNCHEK INI KHUSUS USER PREMIUM!* 👑
 ┊ *HARAP HUBUNGI OWNER* 📞
 ┊ *UNTUK MEMBELI PREMIUM!* 🤝

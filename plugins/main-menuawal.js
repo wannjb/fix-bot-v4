@@ -106,7 +106,7 @@ let nogw = `${nogww.split`@`[0]}@s.whatsapp.net`
 let but1 = ('All Menu') 
 let id1 = '.? all'
 let but2 = ('List Menu') 
-let id2 = '.tesm'
+let id2 = '.listmenu'
 let but3 = ('Sewabot') 
 let id3 = '.sewa'
 let konten = (`*${ucapan()}, ${tag} 👋*, ${kata}`)
@@ -126,9 +126,9 @@ conn.send2ButtonImg(m.chat, await genProfile(conn, m), konten, ᴛᴇs, but1, id
      }}
   })
 }
-handler.help = ['menu123']
+handler.help = ['menu']
 handler.tags = ['main']
-handler.command = /^(menu123|help123)$/i
+handler.command = /^(menu|help)$/i
 handler.register = true
 
 export default handler

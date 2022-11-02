@@ -106,7 +106,7 @@ let nogw = `${nogww.split`@`[0]}@s.whatsapp.net`
 let but1 = ('All Menu') 
 let id1 = '.? all'
 let but2 = ('List Menu') 
-let id2 = '.listmenu'
+let id2 = '.tesm'
 let but3 = ('Sewabot') 
 let id3 = '.sewa'
 let konten = (`*${ucapan()}, ${tag} 👋*, ${kata}`)
@@ -216,4 +216,4 @@ async function genProfile(conn, m) {
     await welcome.print(font, 550, 500, 'Number:')
     await welcome.print(font, 650, 575, PhoneNumber('+' + m.sender.split('@')[0]).getNumber('international'))
     return await welcome.composite(avatar, 50, 170).getBufferAsync('image/png')
-}
+} 

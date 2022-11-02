@@ -25,11 +25,10 @@ let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
 let krtu = `0ཻུ۪۪ꦽꦼ̷⸙‹•══════════════♡᭄
 │       *「 Kartu Intro 」*
-│ *Nama     :* 
+│ *Nama     :*
 │ *Gender   :* 
 │ *Umur      :* 
-│ *Hobby    :* 
-│ *Kelas      :* 
+│ Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}
 │ *Asal         :* 
 │ *Agama    :* 
 |  *Status     :* 

@@ -24,7 +24,7 @@ let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
     let locale = 'id'
     // d.getTimeZoneOffset()
     // Offset -420 is 18.00
-    // Offset    0 is  0.00
+    // Offsetalldiii0 is  0.00
     // Offset  420 is  7.00
     let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
@@ -33,103 +33,16 @@ let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
       month: 'long',
       year: 'numeric'
     })
-
-/*conn.send3ButtonLoc(m.chat, bcbg, anu, footer, buttons1, idbuttons1, buttons2, idbuttons2, buttons3, idbuttons3, m)*/
-    //----------------- FAKE
-    let ftoko = {
-    key: {
-    fromMe: false,
-    participant: `${m.sender.split`@`[0]}` + '@s.whatsapp.net',
-    remoteJid: 'status@broadcast',
-  },
-  message: {
-  "productMessage": {
-  "product": {
-  "productImage":{
-  "mimetype": "image/jpeg",
-  "jpegThumbnail": fs.readFileSync('./thumbnail.jpg'),
-    },
-  "title": `${ucapan()}`,
-  "description": '𝗧 𝗜 𝗠 𝗘 : ' + wktuwib,
-  "currencyCode": "US",
-  "priceAmount1000": "100",
-  "retailerId": wm,
-  "productImageCount": 999
-        },
-  "businessOwnerJid": `${m.sender.split`@`[0]}@s.whatsapp.net`
-  }
-  }
-  }
-  let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
-  
-    const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
     
-    //------------------< MENU >----------------
+//==============> Menu nya
+let intro = `*ʙᴏᴛ* *ʙᴜɪʟᴅ-ᴏᴘᴇʀᴀᴛᴇ-ᴛʀᴀɴsғᴇʀ* _ᴀᴅᴀʟᴀʜ ᴘʀᴏɢʀᴀᴍ ᴋᴏᴍᴘᴜᴛᴇʀ ʏᴀɴɢ ᴅɪᴊᴀʟᴀɴᴋᴀɴ ᴅɪ ᴡʜᴀᴛsᴀᴘᴘ ʏᴀɴɢ ᴋʜᴜsᴜs ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴘᴇᴋᴇʀᴊᴀᴀɴ-ᴘᴇᴋᴇʀᴊᴀᴀɴ ᴏᴛᴏᴍᴀᴛɪs, ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ ᴅɪʀᴀɴᴄᴀɴɢ sᴇᴅᴇᴍɪᴋɪᴀɴ ʀᴜᴘᴀ sᴇʜɪɴɢɢᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴅᴇɴɢᴀɴ ɴʏᴀᴍᴀɴ, ᴅᴀɴ ᴋᴇᴍᴜɴɢᴋɪɴᴀɴ ᴍᴇᴍɪʟɪᴋɪ sᴇᴅɪᴋɪᴛ ʙᴜɢ, ᴀᴅᴀɴʏᴀ ғɪᴛᴜʀ ᴅᴀʀɪ ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ ɪɴɪ ᴛᴇɴᴛᴜ ᴀᴋᴀɴ ᴍᴇᴍʙᴀɴᴛᴜ ᴀɴᴅᴀ ᴜɴᴛᴜᴋ ʙᴇʀsᴇɴᴀɴɢ sᴇɴᴀɴɢ, ᴅʟʟ_`
+conn.send3ButtonDoc(m.chat, `\n\n     *『 ɪ ɴ ᴛ ʀ ᴏ ᴄ ᴀ ᴅ ᴜ ᴛ ɪ ᴏ ɴ 』*\n\n`, intro + `\n\n${tag}\n\n`, 'Aʟʟ Mᴇɴᴜ', '.? all', 'Lɪsᴛ Mᴇɴᴜ', '.tesm', '\nAku Pedo Ygy', 'bilek', m, { contextInfo: { forwardingScore: fsizedoc, externalAdReply: { body: 'Tes', containsAutoReply: true, mediaType: 1, mediaUrl: hwaifu.getRandom(),  renderLargerThumbnail: true, showAdAttribution: true, sourceId: 'Tes', sourceType: 'PDF', previewType: 'PDF', sourceUrl: sgc, thumbnail: fs.readFileSync('./thumbnail.jpg'), thumbnailUrl: sgc, title: 'ɪ ɴ ᴛ ʀ ᴏ ᴄ ᴀ ᴅ ᴜ ᴛ ɪ ᴏ ɴ'}}})
+    } 
     
-    //------------------ SIMPLE
-    /*conn.reply(m.chat, text, fkon, { contextInfo: { mentionedJid: [m.sender],
-        externalAdReply: {
-            title: `${htjava} ${namebot}`,
-            body: titlebot,
-            description: titlebot,
-            mediaType: 2,
-          thumbnail: await(await fetch(thumb2)).buffer(),
-         mediaUrl: sig
-        }
-     }
-    })*/
-    //------------------ DOCUMENT
-    let d1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
-    let d2 = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-    let d3  = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
-    let d4 = 'application/pdf'
-    let d5 = 'text/rtf'
-    let td = `${pickRandom([d1,d2,d3,d4,d5])}`
-    
-    //kata
-    let kata = `${pickRandom('Bᴀɴʏᴀᴋ ʙᴀɴʏᴀᴋ ᴍɪɴᴜᴍ..','I ʟᴏᴠᴇ ʏᴏᴜ','Jᴀɴɢᴀɴ ᴛɪɴɢɢᴀʟɪɴ ᴀᴋᴜ','Aᴋᴜ sʏᴀɴɢ ᴋᴀᴜ ᴛᴀᴘɪ..','Nɢᴇʀᴏᴋᴏᴋ ɢᴀᴋ?','Uᴅᴀʜ ᴅᴏɴᴀsɪ ʙᴇʟᴜᴍ?','Mᴀᴜ sᴇᴡᴀʜ ɢᴀᴋ ɴɪʜ','Oᴜʜʜ ɢɪᴛᴜᴜ,Cᴜᴋᴜᴘ ᴛᴀᴜ','Dᴀʀɪ ᴍᴀɴᴀ ᴀsᴀʟ ᴍᴜ?','Jᴀɴɢᴀɴ ʟᴜᴘᴀ ᴍᴀɴᴅɪ ʏᴀ','Hᴜᴜᴜᴜ....','Uᴅᴀʜ ᴍᴀᴋᴀɴ?','Gᴀᴋ ᴍᴀᴋᴀɴ sᴀᴋɪᴛ ɴᴛᴀʀ','Mᴀɴᴅɪ sᴀɴᴀ ᴡᴏᴇ','Jᴀᴍ ʙᴇʀᴀᴘᴀ sᴋᴀʀᴀɴɢ?','Hᴀʟᴏᴏᴡ')}`
-/*conn.sendButton(m.chat, `*${ucapan()}, ${name} 👋*`, text.trim(), await genProfile(conn, m), [['Speedtest', _p + 'ping'], ['Owner', _p + 'owner']], false, { quoted: fkon, contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://facebook.com/sadtime098",
-    mediaType: "VIDEO",
-    description: "https://facebook.com/sadtime098",
-    title: `${pickRandom('Halo Apa Kabar?')}`,
-    body: wm,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
-    sourceUrl: sgc
-}
-} })*/
-let nowaa = '0'
-let nogww = '6281361281833'
-let nogwww = `@${nomorown1.split`@`[0]}`
-let nowa = `${nowaa.split`@`[0]}@s.whatsapp.net`
-let nogw = `${nogww.split`@`[0]}@s.whatsapp.net`
-let but1 = ('All Menu') 
-let id1 = '.? all'
-let but2 = ('List Menu') 
-let id2 = '.tesm'
-let but3 = ('Sewabot') 
-let id3 = '.sewa'
-let konten = (`*${ucapan()}, ${tag} 👋*, ${kata}`)
-let knnt = `
-*『 ɪɴᴛʀᴏᴅᴜᴄᴛɪᴏɴ 』* 
-
-⁛ BOT(BUILD-OPERATE-TRANSFER) adalah program komputer yang dijalankan di Whatsapp yang khusus dibuat untuk melakukan pekerjaan-pekerjaan otomatis, BOT Whatsapp dirancang sedemikian rupa sehingga dapat digunakan dengan nyaman, dan kemungkinan memiliki sedikit bug, Adanya fitur dari bot WhatsApp ini tentu akan membantu anda untuk bersenang senang, dll`
-let ᴛᴇs = `Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}\n⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
-conn.send2ButtonImg(m.chat, await genProfile(conn, m), konten, ᴛᴇs, but1, id1, but2, id2, m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://facebook.com/sadtime098',
-    mediaType: 2, 
-    description: sgc,
-    title: "Hᴀʟᴏ Jᴀɴɢᴀɴ Lᴜᴘᴀ Bᴇʀsʏᴜᴋᴜʀ!!",
-    body: kata,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
-    sourceUrl: sgc
-     }}
-  })
-}
 handler.help = ['menu']
 handler.tags = ['main']
-handler.command = /^(menu|help)$/i
-handler.register = true
+handler.command = /^(menu|help|co)$/i
+handler.register = false
 
 export default handler
 

@@ -33,9 +33,23 @@ let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
       month: 'long',
       year: 'numeric'
     })
+let nowaa = '0'
+let nogww = '6281361281833'
+let nogwww = `@${nomorown1.split`@`[0]}`
+let nowa = `${nowaa.split`@`[0]}@s.whatsapp.net`
+let nogw = `${nogww.split`@`[0]}@s.whatsapp.net`
+let but1 = ('All Menu') 
+let id1 = '.? all'
+let but2 = ('List Menu') 
+let id2 = '.tesm'
+let but3 = ('Sewabot') 
+let id3 = '.sewa'
+let konten = (`*${ucapan()}, ${tag} 👋*, ${kata}`)
+let knnt = `
     
 //==============> Menu nya
-let intro = `*ʙᴏᴛ* *ʙᴜɪʟᴅ-ᴏᴘᴇʀᴀᴛᴇ-ᴛʀᴀɴsғᴇʀ* _ᴀᴅᴀʟᴀʜ ᴘʀᴏɢʀᴀᴍ ᴋᴏᴍᴘᴜᴛᴇʀ ʏᴀɴɢ ᴅɪᴊᴀʟᴀɴᴋᴀɴ ᴅɪ ᴡʜᴀᴛsᴀᴘᴘ ʏᴀɴɢ ᴋʜᴜsᴜs ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴘᴇᴋᴇʀᴊᴀᴀɴ-ᴘᴇᴋᴇʀᴊᴀᴀɴ ᴏᴛᴏᴍᴀᴛɪs, ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ ᴅɪʀᴀɴᴄᴀɴɢ sᴇᴅᴇᴍɪᴋɪᴀɴ ʀᴜᴘᴀ sᴇʜɪɴɢɢᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴅᴇɴɢᴀɴ ɴʏᴀᴍᴀɴ, ᴅᴀɴ ᴋᴇᴍᴜɴɢᴋɪɴᴀɴ ᴍᴇᴍɪʟɪᴋɪ sᴇᴅɪᴋɪᴛ ʙᴜɢ, ᴀᴅᴀɴʏᴀ ғɪᴛᴜʀ ᴅᴀʀɪ ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ ɪɴɪ ᴛᴇɴᴛᴜ ᴀᴋᴀɴ ᴍᴇᴍʙᴀɴᴛᴜ ᴀɴᴅᴀ ᴜɴᴛᴜᴋ ʙᴇʀsᴇɴᴀɴɢ sᴇɴᴀɴɢ, ᴅʟʟ_`
+let intro = ` ⁛ BOT(BUILD-OPERATE-TRANSFER) adalah program komputer yang dijalankan di Whatsapp yang khusus dibuat untuk melakukan pekerjaan-pekerjaan otomatis, BOT Whatsapp dirancang sedemikian rupa sehingga dapat digunakan dengan nyaman, dan kemungkinan memiliki sedikit bug, Adanya fitur dari bot WhatsApp ini tentu akan membantu anda untuk bersenang senang, dll`
+let ᴛᴇs = `Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}\n⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 conn.send3ButtonDoc(m.chat, `\n\n     *『 ɪ ɴ ᴛ ʀ ᴏ ᴄ ᴀ ᴅ ᴜ ᴛ ɪ ᴏ ɴ 』*\n\n`, intro + `\n\n${tag}\n\n`, 'Aʟʟ Mᴇɴᴜ', '.? all', 'Lɪsᴛ Mᴇɴᴜ', '.tesm', '\nAku Pedo Ygy', 'bilek', m, { contextInfo: { forwardingScore: fsizedoc, externalAdReply: { body: 'Tes', containsAutoReply: true, mediaType: 1, mediaUrl: hwaifu.getRandom(),  renderLargerThumbnail: true, showAdAttribution: true, sourceId: 'Tes', sourceType: 'PDF', previewType: 'PDF', sourceUrl: sgc, thumbnail: fs.readFileSync('./thumbnail.jpg'), thumbnailUrl: sgc, title: 'ɪ ɴ ᴛ ʀ ᴏ ᴄ ᴀ ᴅ ᴜ ᴛ ɪ ᴏ ɴ'}}})
     } 
     
@@ -46,87 +60,66 @@ handler.register = false
 
 export default handler
 
-//----------- FUNGSI -------
+//----------- FUNCTION -------
 
-fungsi  pickRandom ( daftar )  {
-   daftar kembali [ Math . lantai ( Math . random ( )  *  list . length ) ]
+function pickRandom(list) {
+  return list[Math.floor(Math.random() * list.length)]
 }
 
-const  lebih  =  String . dariCharCode ( 8206 )
-const  readMore  =  lebih banyak . ulangi ( 4001 )
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
 
-fungsi  clockString ( ms )  {
-  misalkan  h  =  isNaN ( ms ) ? '--' : Matematika . lantai ( ms  /  3600000 )
-  misalkan  m  =  isNaN ( ms ) ? '--' : Matematika . lantai ( ms  /  60000 )  %  60
-  misalkan  s  =  isNaN ( ms ) ? '--' : Matematika . lantai ( ms  /  1000 )  %  60
-  kembali  [ h ,  'H' ,  m ,  'M' ,  s ,  'S' ] . peta ( v  =>  v . toString ( ) . padStart ( 2 ,  0 ) ) . bergabung ( '' )
+function clockString(ms) {
+  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+  return [h, ' H ', m, ' M ', s, ' S '].map(v => v.toString().padStart(2, 0)).join('')
 }
-fungsi  clockStringP ( ms )  {
-  biarkan  kamu  =  isNaN ( ms ) ? '--' : Matematika . lantai ( ms  /  31104000000 )  %  10
-  misalkan  mo  =  isNaN ( ms ) ? '--' : Matematika . lantai ( ms  /  2592000000 )  %  12
-  misalkan  d  =  isNaN ( ms ) ? '--' : Matematika . lantai ( ms  /  8640000 )  %  30
-  misalkan  h  =  isNaN ( ms ) ? '--' : Matematika . lantai ( ms  /  3600000 )  %  24
-  misalkan  m  =  isNaN ( ms ) ? '--' : Matematika . lantai ( ms  /  60000 )  %  60
-  misalkan  s  =  isNaN ( ms ) ? '--' : Matematika . lantai ( ms  /  1000 )  %  60
-  kembali  [ kamu ,  ' *Tahun ️*\n' ,   bulan ,  ' *Bulan *\n' ,  d ,  ' *Hari ️*\n' ,  h ,  ' *Jam *\n' ,  m ,  ' * Menit ⏰*\n' ,  s ,  ' *Kedua ️*' ] . peta ( v  =>  v . toString ( ) . padStart ( 2 ,  0 ) ) . bergabung ( '' )
+function clockStringP(ms) {
+  let ye = isNaN(ms) ? '--' : Math.floor(ms / 31104000000) % 10
+  let mo = isNaN(ms) ? '--' : Math.floor(ms / 2592000000) % 12
+  let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000) % 30
+  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
+  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+  return [ye, ' *Years 🗓️*\n',  mo, ' *Month 🌙*\n', d, ' *Days ☀️*\n', h, ' *Hours 🕐*\n', m, ' *Minute ⏰*\n', s, ' *Second ⏱️*'].map(v => v.toString().padStart(2, 0)).join('')
 }
- ucapan fungsi ( )  {
-  konstanta  waktu  =  momen . tz ( 'Asia/Jakarta' ) . format ( 'HH' )
-  let  res  =  "Sudah Dini Hari Kok Belum Tidur Kak? "
-  jika  ( waktu  >=  4 )  {
-    res  =  "Pagi Tuhan "
+function ucapan() {
+  const time = moment.tz('Asia/Jakarta').format('HH')
+  let res = "Sudah Dini Hari Kok Belum Tidur Kak? 🥱"
+  if (time >= 4) {
+    res = "Pagi Lord 🌄"
   }
-  jika  ( waktu  >=  10 )  {
-    res  =  "Selamat Siang Kak ️"
+  if (time >= 10) {
+    res = "Selamat Siang Kak ☀️"
   }
-  jika  ( waktu  >=  15 )  {
-    res  =  "Selamat Sakit Kak "
+  if (time >= 15) {
+    res = "Selamat Sore Kak 🌇"
   }
-  jika  ( waktu  >=  18 )  {
-    res  =  "Malam Kak "
+  if (time >= 18) {
+    res = "Malam Kak 🌙"
   }
-  kembalikan  res
-}
-
-fungsi  keinginan ( )  {
-    biarkan  wishloc  =  ''
-  konstanta  waktu  =  momen . tz ( 'Asia/Kolkata' ) . format ( 'HH' )
-  wishloc  =  ( 'hai' )
-  jika  ( waktu  >=  0 )  {
-    wishloc  =  ( 'Penunggang Malam' )
-  }
-  jika  ( waktu  >=  4 )  {
-    wishloc  =  ( 'Selamat Pagi' )
-  }
-  jika  ( waktu  >=  12 )  {
-    wishloc  =  ( 'Selamat Siang' )
-  }
-  jika  ( waktu  >=  16 )  {
-    wishloc  =  ( '️Selamat sore' )
-  }
-  jika  ( waktu  >=  23 )  {
-    wishloc  =  ( 'Penunggang Malam' )
-  }
-  kembalikan  harapan
+  return res
 }
 
- fungsi  async genProfile ( samb ,  m )  {
-  biarkan  font  =  menunggu  jimp . loadFont ( './names.fnt' ) ,
-    topeng  =  menunggu  jimp . baca ( 'https://i.imgur.com/552kzaW.png' ) ,
-    selamat datang  =  tunggu  jimp . baca ( thumbnailUrl . getRandom ( ) ) ,
-    avatar  =  tunggu  jimp . read ( menunggu  samb . profilePictureUrl ( m . sender ,  'image' ) . catch ( ( )  =>  'https://telegra.ph/file/24fa902ead26340f3df2c.png ' ) ,
-    status  =  ( menunggu  samb . fetchStatus ( m . sender ) .catch ( console . log ) || { } ) . _ status ?. irisan ( 0 , 30 ) || 'Tidak terdeteksi'     
-
-    menunggu  avatarnya . mengubah ukuran ( 460 ,  460 )
-    menunggu  topeng . mengubah ukuran ( 460 ,  460 )
-    menunggu  avatarnya . topeng ( masker )
-    menunggu  selamat datang . ubah ukuran ( selamat datang . getWidth ( ) ,  selamat datang . getHeight ( ) )
-
-    menunggu  selamat datang . cetak ( font ,  550 ,  180 ,  'Nama:' )
-    menunggu  selamat datang . print ( font ,  650 ,  255 ,  m . pushName . slice ( 0 ,  25 ) )
-    menunggu  selamat datang . cetak ( font ,  550 ,  340 ,  'Tentang:' )
-    menunggu  selamat datang . cetak ( font ,  650 ,  415 ,  status )
-    menunggu  selamat datang . cetak ( font ,  550 ,  500 ,  'Nomor:' )
-    menunggu  selamat datang . print ( font ,  650 ,  575 ,  PhoneNumber ( '+'  +  m . sender . split ( '@' ) [ 0 ] ) . getNumber ( 'international' ) )
-    kembali  menunggu  selamat datang . komposit ( avatar ,  50 ,  170 ) . getBufferAsync ( 'gambar/png' )
+function wish() {
+    let wishloc = ''
+  const time = moment.tz('Asia/Kolkata').format('HH')
+  wishloc = ('Hi')
+  if (time >= 0) {
+    wishloc = ('Night Rider')
+  }
+  if (time >= 4) {
+    wishloc = ('Good Morning')
+  }
+  if (time >= 12) {
+    wishloc = ('Good Afternoon')
+  }
+  if (time >= 16) {
+    wishloc = ('️Good Evening')
+  }
+  if (time >= 23) {
+    wishloc = ('Night Rider')
+  }
+  return wishloc
 }

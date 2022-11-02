@@ -39,6 +39,7 @@ Allah mengetahui apa-apa yang di hadapan mereka dan di belakang mereka, dan mere
 (QS. Al Baqarah: 255)
 ╰═════ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙
 `
+let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey`
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, krtu, wm,'MENU','.menu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "https://Instagram.com/_ctzhid",

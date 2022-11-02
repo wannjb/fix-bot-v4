@@ -1,24 +1,28 @@
-let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
-let moment = require('moment-timezone')
-let time = moment.tz('Asia/Jakarta').format("HH:mm:ss")
-let date = moment.tz('Asia/Jakarta').format("dddd, Do MMMM, YYYY")
+import fetch from 'node-fetch'
+let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
+//let handler = async(m, { conn, text, usedPrefix, command }) => {
+//let pp = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image')
 
-conn.sendButtonDoc(m.chat, 'ʜᴀɪ,ᴀᴋᴜ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ʏᴀɴɢ ᴅɪʙᴇʀɪ ɴᴀᴍᴀ ArullBotz,ᴀᴋᴜ ᴅɪ ᴋᴇᴍʙᴀɴɢᴋᴀɴ ᴏʟᴇʜ ꜱᴇꜱᴇᴏʀᴀɴɢ ʏᴀɴɢ ʙᴇʀɴᴀᴍᴀ Sahrull,ʙᴇʟɪᴀᴜ ᴍᴀꜱɪʜ ᴘᴇᴍᴜʟᴀ ᴅᴀɴ ᴍᴀꜱɪʜ ʙᴇʟᴀᴊᴀʀ ʙᴀɴʏᴀᴋ ʜᴀʟ,ᴅᴀɴ ᴛᴜᴊᴜᴀɴɴʏᴀ ʜᴀɴʏᴀ ɪɴɢɪɴ ᴛᴀᴜ ʙᴇʀʙᴀɢᴀɪ ʜᴀʟ ʏᴀɴɢ ᴀᴅᴀ ᴅɪᴅᴜɴɪᴀ ʙᴏᴛ,ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ꜰɪᴛᴜʀ ʙᴏᴛ,ꜱɪʟᴀʜᴋᴀɴ ᴋʟɪᴋ ʙᴜᴛᴛᴏɴ ᴅɪʙᴀᴡᴀʜ\n\nɴᴏᴛᴇ: ʜᴀʀᴀᴘ ɢᴜɴᴀᴋᴀɴ ʙᴏᴛ ꜱᴇᴄᴀʀᴀ ʙɪᴊᴀᴋ ᴅᴀɴ ᴊᴀɴɢᴀɴ ᴅɪꜱᴘᴀᴍ', data.namabot, 'ʟɪꜱᴛᴍᴇɴᴜ', '.m', fake, { contextInfo: {
-externalAdReply :{
-    showAdAttribution: true,
-    mediaUrl: data.sc,
-    mediaType: 2,
-    sourceUrl: data.sc,
-    title: 'Jangan Dispam Ya Bre',
-    body: wm,
-    thumbnail: await(await fetch(img)).buffer(),
-}}})
-}
+let str = `${global.wm}
+┌─「 Donasi • Pulsa 」
+│ • *Telkomsel:* [${global.ppulsa}]
+❏────
 
+┌─「 Donasi • Non Pulsa 」
+│ • *Dana:* [${global.pdana}]
+│ • *Gopay:* [${global.pgopay}]
+│ • *Ovo:* [${global.povo}]
+│ • *Link Aja:* [${global.plinkaja}]
+❏────`
+let ᴛᴇs = `Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}\n⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
+let wibu = `https://telegra.ph/file/efbf6b53a658d683aaa71.jpg` 
+let thumb = await(await fetch(wibu)).buffer()
+conn.sendButtonDoc(m.chat, str, wm,'🪀 Commands 🪀','.listmenu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+  }
+  } }) 
+          }
 handler.help = ['menu']
 handler.tags = ['main']
-handler.command = /^(menu)$/i
+handler.command = /^menu(menu|help)$/i
 
-module.exports = handler
-
-
+export default handler

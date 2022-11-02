@@ -24,10 +24,6 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
 let krtu = `0ཻུ۪۪ꦽꦼ̷⸙‹•══════════════♡᭄
-│       *「 Kartu Intro 」*
-│ *Nama     :*
-│ *Gender   :* 
-│ *Umur      :* 
 │ Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}
 │ *Asal         :* 
 │ *Agama    :* 
@@ -45,7 +41,7 @@ conn.sendButtonDoc(m.chat, krtu, wm,'MENU','.menu', m, { contextInfo: { external
     thumbnail: thumb,
     sourceUrl: sgc
   }
-  } }) // Tambah sendiri kalo mau
+  } }) // Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}
 }
 handler.command = /^(intro)$/i
 

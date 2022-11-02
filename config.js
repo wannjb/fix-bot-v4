@@ -66,8 +66,11 @@ global.ppulsa2 = '0895327999292' // kalau ada kartu lain isi aja
 global.psaweria = '-'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '62895327999305'
+global.nomorbot = '6289518377899'
 global.nomorown = '62895327999292'
+global.nomorown1 = '62895327999292'
+global.nomorown2 = '62895327999292'
+global.nomorwa = '0'
 global.namebot = 'WannTrue BOT'
 global.nameown = 'WannTrue'
 /*============== Github Thanks To ==============*/

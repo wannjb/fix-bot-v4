@@ -111,5 +111,6 @@ handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['xp']
 
 handler.command = /^(daftar|verify|reg(ister)?)$/i
+handler.menu = true
 
 export default handler

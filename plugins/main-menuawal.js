@@ -52,7 +52,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
   let old = performance.now()
   let neww = performance.now()
   let speed = neww - old
-    let cap = `*HI BRE*
+    let cap = `*HI ${conn.getName(m.sender)}*
 🤖 ɴᴀᴍᴇ: WannTrue BOT
 👑 Cʀᴇᴀᴛᴏʀ Bᴏᴛ: @${nomorown1.split`@`[0]}
 ✉️ Pᴏᴡᴇʀ Bʏ: @${nomorwa.split`@`[0]}

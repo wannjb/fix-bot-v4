@@ -52,7 +52,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
   let old = performance.now()
   let neww = performance.now()
   let speed = neww - old
-    let cap = `*${ucapan()} ${conn.getName(m.sender)}*
+    let cap = `*HALLO BRE 👋*
 🤖 ɴᴀᴍᴇ: WannTrue BOT
 👑 Cʀᴇᴀᴛᴏʀ Bᴏᴛ: @${nomorown1.split`@`[0]}
 ✉️ Pᴏᴡᴇʀ Bʏ: @${nomorwa.split`@`[0]}
@@ -76,7 +76,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
 ⮕ ${chats.length - groupsIn.length} - Personal Chats
 ⮕ ${chats.length} - Total Chats
 `
-await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + 'Test', fkontak, {
+await conn.sendButtonDoc(m.chat, cap, botdate, 'Command 🪀', usedPrefix + 'listmenu', fkontak, {
 			contextInfo: {
 				forwardingScore: fsizedoc,
 				externalAdReply: {

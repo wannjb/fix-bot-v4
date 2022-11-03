@@ -97,9 +97,9 @@ await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + 'owner', fk
 			}
 })
 }
-handler.help = ['botinfo']
-handler.tags = ['info']
-handler.command = /^(botinfo|infobot)$/i
+handler.help = ['menu']
+handler.tags = ['main']
+handler.command = /^(menu|help)$/i
 
 export default handler
 

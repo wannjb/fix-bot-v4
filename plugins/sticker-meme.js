@@ -13,7 +13,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (stiker) await conn.sendFile(m.chat, stiker, '', author, m, '', { asSticker: 1 })
 }
 handler.help = ['smeme <teks atas>|<teks bawah>']
-handler.tags = ['tools', 'limitmenu']
+handler.tags = ['tools']
 handler.command = /^(smeme)$/i
 
 handler.limit = true

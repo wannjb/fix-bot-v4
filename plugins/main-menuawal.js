@@ -99,6 +99,7 @@ await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + 'owner', fk
 handler.help = ['menu']
 handler.tags = ['main']
 handler.command = /^(menu|help)$/i
+handler.register = true
 
 export default handler
 

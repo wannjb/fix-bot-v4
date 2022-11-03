@@ -15,7 +15,7 @@ let format = sizeFormatter({
   render: (literal, symbol) => `${literal} ${symbol}B`,
 })
 let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
-    let pp = 'https://telegra.ph/file/efbf6b53a658d683aaa71.jpg'
+    let pp = 'https://telegra.ph/file/cb1200170c98fea692b9a.jpg'
     let date = moment.tz('Asia/Jakarta').format("dddd, Do MMMM, YYYY")
     let time = moment.tz('Asia/Jakarta').format('HH:mm:ss')
     let _uptime = process.uptime() * 1000
@@ -52,12 +52,11 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
   let old = performance.now()
   let neww = performance.now()
   let speed = neww - old
-  let cap = `*HI BRE*
-🤖 ɴᴀᴍᴇ: WannTrue BOT
-👑 Cʀᴇᴀᴛᴏʀ Bᴏᴛ: @${nomorown1.split`@`[0]}
-✉️ Pᴏᴡᴇʀ Bʏ: @${nomorwa.split`@`[0]}
-🧩 ᴠᴇʀsɪᴏɴ: 7.9.8
-📚 ʟɪʙʀᴀʀʏ: Bot WhatsApp By WannTrue
+  let cap = `*––––––『 BOT INFO 』––––––*
+${readMore}
+🤖 ɴᴀᴍᴇ: SkyBot
+🧩 ᴠᴇʀsɪᴏɴ: 1.3.0
+📚 ʟɪʙʀᴀʀʏ: Simple Bot WhatsApp By Arifzyn 
 
 ⏳ ᴜᴩᴛɪᴍᴇ: ${uptime}
 📈 ᴅᴀᴛᴀʙᴀsᴇ: ${totalreg}
@@ -76,23 +75,23 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
 ⮕ ${chats.length - groupsIn.length} - Personal Chats
 ⮕ ${chats.length} - Total Chats
 `
-await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + 'Listmenu', list menu, {
+await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + 'owner', fkontak, {
 			contextInfo: {
 				forwardingScore: fsizedoc,
 				externalAdReply: {
-                    body: '© WannTrue',
+                    body: '© 𝐒𝐤𝐲𝐁𝗼𝐭',
     containsAutoReply: true,
     mediaType: 1,
     mediaUrl: hwaifu.getRandom(), 
     renderLargerThumbnail: true,
     showAdAttribution: true,
-    sourceId: '© WannTrue',
+    sourceId: '© 𝐒𝐤𝐲𝐁𝗼𝐭',
     sourceType: 'PDF',
     previewType: 'PDF',
     sourceUrl: sgc,
     thumbnail: await(await fetch(pp)).buffer(),
     thumbnailUrl: sgc,
-    title: '☰ WannTrue ☰'
+    title: '☰ ━━━ ❨ INFO BOT ❩ ━━┄┈ ☰'
 				}
 			}
 })

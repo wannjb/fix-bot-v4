@@ -15,7 +15,7 @@ let format = sizeFormatter({
   render: (literal, symbol) => `${literal} ${symbol}B`,
 })
 let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
-    let pp = 'https://telegra.ph/file/cb1200170c98fea692b9a.jpg'
+    let pp = 'https://telegra.ph/file/efbf6b53a658d683aaa71.jpg'
     let date = moment.tz('Asia/Jakarta').format("dddd, Do MMMM, YYYY")
     let time = moment.tz('Asia/Jakarta').format('HH:mm:ss')
     let _uptime = process.uptime() * 1000
@@ -52,7 +52,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
   let old = performance.now()
   let neww = performance.now()
   let speed = neww - old
-  let cap = `*––––––『 BOT INFO 』––––––*
+  let cap = `*HI ${conn.getName(m.sender)}*
 🤖 ɴᴀᴍᴇ: WannTrue BOT
 👑 Cʀᴇᴀᴛᴏʀ Bᴏᴛ: @${nomorown1.split`@`[0]}
 ✉️ Pᴏᴡᴇʀ Bʏ: @${nomorwa.split`@`[0]}
@@ -83,7 +83,7 @@ await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + 'owner', fk
                     body: '© WannTrue',
     containsAutoReply: true,
     mediaType: 1,
-    mediaUrl: 'https://Instagram.com/mhdkrnwnn_', 
+    mediaUrl: hwaifu.getRandom(), 
     renderLargerThumbnail: true,
     showAdAttribution: true,
     sourceId: '© WannTrue',
@@ -92,7 +92,7 @@ await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + 'owner', fk
     sourceUrl: sgc,
     thumbnail: await(await fetch(pp)).buffer(),
     thumbnailUrl: sgc,
-    title: 'WannTrue-MultiDevice''
+    title: '☰ WannTrue ☰'
 				}
 			}
 })

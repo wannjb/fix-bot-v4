@@ -76,7 +76,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
 ⮕ ${chats.length - groupsIn.length} - Personal Chats
 ⮕ ${chats.length} - Total Chats
 `
-await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + '🪀 Commands 🪀', listmenu, {
+await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + '🪀 Commands 🪀',listmenu, {
 			contextInfo: {
 				forwardingScore: fsizedoc,
 				externalAdReply: {

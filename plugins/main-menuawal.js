@@ -52,11 +52,12 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
   let old = performance.now()
   let neww = performance.now()
   let speed = neww - old
-  let cap = `*––––––『 BOT INFO 』––––––*
-${readMore}
-🤖 ɴᴀᴍᴇ: SkyBot
-🧩 ᴠᴇʀsɪᴏɴ: 1.3.0
-📚 ʟɪʙʀᴀʀʏ: Simple Bot WhatsApp By Arifzyn 
+    let cap = `*HI BRE*
+🤖 ɴᴀᴍᴇ: WannTrue BOT
+👑 Cʀᴇᴀᴛᴏʀ Bᴏᴛ: @${nomorown1.split`@`[0]}
+✉️ Pᴏᴡᴇʀ Bʏ: @${nomorwa.split`@`[0]}
+🧩 ᴠᴇʀsɪᴏɴ: 7.9.8
+📚 ʟɪʙʀᴀʀʏ: Bot WhatsApp By WannTrue
 
 ⏳ ᴜᴩᴛɪᴍᴇ: ${uptime}
 📈 ᴅᴀᴛᴀʙᴀsᴇ: ${totalreg}
@@ -75,7 +76,7 @@ ${readMore}
 ⮕ ${chats.length - groupsIn.length} - Personal Chats
 ⮕ ${chats.length} - Total Chats
 `
-await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + 'owner', fkontak, {
+await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + 'Listmenu', listmenu, {
 			contextInfo: {
 				forwardingScore: fsizedoc,
 				externalAdReply: {
@@ -91,7 +92,7 @@ await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + 'owner', fk
     sourceUrl: sgc,
     thumbnail: await(await fetch(pp)).buffer(),
     thumbnailUrl: sgc,
-    title: '☰ ━━━ ❨ INFO BOT ❩ ━━┄┈ ☰'
+    title: '☰ ━━━ ❨ WannTrue ❩ ━━┄┈ ☰'
 				}
 			}
 })

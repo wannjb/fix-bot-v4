@@ -56,8 +56,8 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
 🤖 ɴᴀᴍᴇ: WannTrue BOT
 👑 Cʀᴇᴀᴛᴏʀ Bᴏᴛ: @${nomorown1.split`@`[0]}
 ✉️ Pᴏᴡᴇʀ Bʏ: @${nomorwa.split`@`[0]}
-🧩 ᴠᴇʀsɪᴏɴ: 1.3.0
-📚 ʟɪʙʀᴀʀʏ: Simple Bot WhatsApp By Arifzyn 
+🧩 ᴠᴇʀsɪᴏɴ: 7.9.8
+📚 ʟɪʙʀᴀʀʏ: Bot WhatsApp By WannTrue
 
 ⏳ ᴜᴩᴛɪᴍᴇ: ${uptime}
 📈 ᴅᴀᴛᴀʙᴀsᴇ: ${totalreg}
@@ -80,19 +80,19 @@ await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + 'owner', fk
 			contextInfo: {
 				forwardingScore: fsizedoc,
 				externalAdReply: {
-                    body: '© 𝐒𝐤𝐲𝐁𝗼𝐭',
+                    body: '© WannTrue',
     containsAutoReply: true,
     mediaType: 1,
-    mediaUrl: hwaifu.getRandom(), 
+    mediaUrl: 'https://Instagram.com/mhdkrnwnn_', 
     renderLargerThumbnail: true,
     showAdAttribution: true,
-    sourceId: '© 𝐒𝐤𝐲𝐁𝗼𝐭',
+    sourceId: '© WannTrue',
     sourceType: 'PDF',
     previewType: 'PDF',
     sourceUrl: sgc,
     thumbnail: await(await fetch(pp)).buffer(),
     thumbnailUrl: sgc,
-    title: '☰ ━━━ ❨ INFO BOT ❩ ━━┄┈ ☰'
+    title: 'WannTrue-MultiDevice''
 				}
 			}
 })

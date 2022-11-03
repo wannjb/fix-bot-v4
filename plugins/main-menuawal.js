@@ -49,6 +49,8 @@ let time = moment.tz('Asia/Jakarta').format('HH:mm:ss')
   ◉ 𝐑𝗼𝐥𝐞 : ${role}
   ◉ 𝐀𝐠𝐞 : ${age}
 
+   *_Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}_*
+
 ➥ *𝐈𝐍𝐅𝐎 𝐁𝐎𝐓*
   ◉ R𝐮𝐧𝐧𝐢𝐧𝐠 O𝐧 : linuk
   ◉ M𝗼𝐝𝐞 : Public
@@ -57,7 +59,7 @@ let time = moment.tz('Asia/Jakarta').format('HH:mm:ss')
   ◉ 𝐔𝐬𝐞𝐫 𝐁𝐚𝐧𝐧𝐞𝐝 : ${users.length}
   `
 await m.reply('Sedang Menampilkan Menu...')
-await conn.sendButton(m.chat, cap, Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}, Buffer.alloc(0), [['🪀 Commands 🪀', '.listmenu'], ['All Menu', '/allmenu']], fkontak, { mimetype: "text/rtf", fileName: 'WannTrue', pageCount: 90000, fileLength: 90000, seconds: 90000, jpegThumbnail: pepe, contextInfo: {
+await conn.sendButton(m.chat, cap, `*Cʀᴇᴀᴛᴏʀ Bᴏᴛ WannTrue*`, Buffer.alloc(0), [['🪀 Commands 🪀', '.listmenu'], ['All Menu', '/allmenu']], fkontak, { mimetype: "text/rtf", fileName: 'WannTrue', pageCount: 90000, fileLength: 90000, seconds: 90000, jpegThumbnail: pepe, contextInfo: {
           externalAdReply :{
           showAdAttribution: true,
     mediaUrl: sig,

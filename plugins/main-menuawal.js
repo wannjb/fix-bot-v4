@@ -4,7 +4,7 @@ let totalf = Object.values(plugins).filter(v => v.help && !v.disabled).map(v => 
 let tqto = `_* 『 Info Total Fitur 』 *_ 
 
 *🔖 FITUR :* ${totalf.length}`
-conn.sendButtonLoc(m.chat, pp + 'Total Fitur', tqto, 'Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}', 'MENU', usedPrefix + 'menu', m)
+conn.sendButtonLoc(m.chat, pp + 'Total Fitur', 'Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}', 'MENU', usedPrefix + 'menu', m)
 }
 handler.help = ['menu']
 handler.tags = ['main']

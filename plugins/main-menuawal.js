@@ -49,7 +49,7 @@ let time = moment.tz('Asia/Jakarta').format('HH:mm:ss')
   ◉ 𝐑𝗼𝐥𝐞 : ${role}
   ◉ 𝐀𝐠𝐞 : ${age}
 
-let ᴛᴇs = `Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}
+let ᴛᴇs = `Owner ⬝ @${nomorwa.split`@`[0]}\nzPengembang ⬝ @${nomorown1.split`@`[0]}
 
 ➥ *𝐈𝐍𝐅𝐎 𝐁𝐎𝐓*
   ◉ R𝐮𝐧𝐧𝐢𝐧𝐠 O𝐧 : linuk

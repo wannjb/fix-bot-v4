@@ -75,7 +75,6 @@ ${readMore}
 ⮕ ${chats.length - groupsIn.length} - Personal Chats
 ⮕ ${chats.length} - Total Chats
 `
-let ᴛᴇs = `Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}\n⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 await conn.sendButtonDoc(m.chat, cap, botdate, 'Owner', usedPrefix + 'owner', fkontak, {
 			contextInfo: {
 				forwardingScore: fsizedoc,

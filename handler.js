@@ -1308,9 +1308,9 @@ export async function participantsUpdate({ id, participants, action }) {
     sourceUrl: sgc
      }}
   })*/
-  let welcom = 'https://telegra.ph/file/aab124271570c51f76aac.jpg'
+  let welcom = 'https://telegra.ph/file/1cd20dd295d90a2ee3f94.png'
 
-  let godbye = 'https://telegra.ph/file/deaf59bc3e5216eaae814.jpg'
+  let godbye = 'https://telegra.ph/file/1cd20dd295d90a2ee3f94.png'
   conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'WH MODS BOT', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://www.instagram.com/mdhkrnwnn_',
     mediaType: 2, 

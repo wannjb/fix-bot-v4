@@ -371,7 +371,8 @@ let tek = `✧────···[ Dashboard ]···────✧
 ╰━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
-  footer: `⚠️ *Note* : Bot masih dalam pengembangan, jika anda menemukan bug/fitur error' harap dimaklumi  \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ${nameown}\n\n${botdate}\n\n${wm2}`,
+  footer: `⚠️ *Note* : 
+Bot masih dalam pengembangan, jika anda menemukan bug/fitur error' harap dimaklumi  \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ${nameown}\n\n${botdate}\n\n${wm2}`,
   mentions: await conn.parseMention(tek),
   title: ``,
   buttonText: `CLICK BRE ⎙`, 
@@ -707,7 +708,7 @@ handler.help = ['listmenu', 'menulist']
 
 handler.command = /^(listmenu|menulist|\?)$/i
 
-handler.register = false
+handler.register = true
 handler.exp = 3
 
 export default handler

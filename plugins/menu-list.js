@@ -708,7 +708,7 @@ handler.help = ['listmenu', 'menulist']
 
 handler.command = /^(listmenu|menulist|\?)$/i
 
-handler.register = true
+handler.register = false
 handler.exp = 3
 
 export default handler

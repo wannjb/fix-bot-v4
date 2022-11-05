@@ -283,7 +283,7 @@ const sections = [
       },{
         title: `${htki} BONUS ${htka}`,
         rows: [
-            {title: `🎮 • UNCHEK FREE`, rowId: ".akun", description: "Menampilkan rules akun unchek "},
+            {title: `✉️ • UNCHEK FREE`, rowId: ".akun", description: "Menampilkan rules akun unchek "},
         ]
       },{
         title: `${htki} SUPPORT ${htka}`,
@@ -299,7 +299,7 @@ const sections = [
           ]},{ 
         title: `${htki} MENU ${htka}`,
         rows: [
-            {title: `💬 • All`, rowId: ".? all", description: "Menampilkan Semua command BOT"},
+            {title: `🤷 • All`, rowId: ".? all", description: "Menampilkan Semua command BOT"},
             {title: `☘️ • Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
         {title: `✨ • Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
         {title: `🎮 • Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
@@ -338,34 +338,27 @@ let tek = `✧────···[ Dashboard ]···────✧
 ┬
 │${emot} 「 Hai Bre👋 」
 ├❖ 「 ${conn.getName(m.sender)} 」
-├❖  Bagaimana Harimu? 😄
-├❖  Terima Kasih Telah Menggunakan Bot Kami
+├❖  Sudah sunat? 👩‍⚕️
+├❖  Belum sunat gak boleh pakai bot kami
+├❖  Khusus yang sudah sunat
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *U s e r  I n f o 克* 」
+│  「 *U s e r  I n p o 克* 」
 │${emot} *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 │${emot} *ᴛᴀɢs:* @${m.sender.split`@`[0]}
 │${emot} *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
 │${emot} *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *S t a t u s  I n f o 比* 」
-│${emot} *ᴛɪᴍᴇ:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
-│${emot} *ᴜsᴇʀs:* ${Object.keys(global.db.data.users).length}
-│${emot} *ʟɪᴍɪᴛ:* ${usrs.limit}
-│${emot} *ʟᴇᴠᴇʟ:* ${usrs.level}
-│
-├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *I n f o   B o t 比* 」
+│  「 *I n p o   B o t 比* 」
+│${emot} Total fitur ${totalf}
 │${emot} Aktif selama ${mpt}
-│${emot} Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-│${emot} Prefix : [ ${_p} ]
 │${emot} *${Object.keys(global.db.data.users).length}* Pengguna
 │${emot} *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 │${emot} *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
-│ ▸ *ᴀᴜᴛʜᴏʀ :* ${nameown}
+│ ▸ *ᴀᴜᴛʜᴏʀ :* ${nameown1}
 ┴ ▸ *ᴏᴡɴᴇʀ :* ${nameown}
 ✧
 ┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
@@ -378,7 +371,7 @@ let tek = `✧────···[ Dashboard ]···────✧
 ╰━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
-  footer: `📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ${nameown}\n\n${botdate}\n\n${wm2}`,
+  footer: `📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ${nameown}\n\n${botdate}\n\n${wm2}`,
   mentions: await conn.parseMention(tek),
   title: ``,
   buttonText: `CLICK BRE ⎙`, 
@@ -528,7 +521,7 @@ const listMessage = {
 
     surface : 1,
 
-    message: `Hai Kak ${name}!`, 
+    message: `Hai Bre ${name}!`, 
 
     orderTitle: `▮Menu ▸`,
 

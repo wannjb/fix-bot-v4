@@ -351,7 +351,7 @@ let tek = `✧────···[ Dashboard ]···────✧
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
 │  「 *I n p o   B o t 比* 」
-│${emot} Total fitur ${totalf}
+│${emot} Total fitur 471
 │${emot} Aktif selama ${mpt}
 │${emot} *${Object.keys(global.db.data.users).length}* Pengguna
 │${emot} *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned

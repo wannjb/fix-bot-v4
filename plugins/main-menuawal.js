@@ -54,7 +54,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
   let speed = neww - old
     let cap = `*HALLO BRE 👋*
 🤖 ɴᴀᴍᴇ: WannTrue BOT
-👑 Cʀᴇᴀᴛᴏʀ Bᴏᴛ: @${nomorown1.split`@`[0]}
+👑 Cʀᴇᴀᴛᴏʀ Bᴏᴛ: @${nomorown.split`@`[0]}
 ✉️ Pᴏᴡᴇʀ Bʏ: @${nomorwa.split`@`[0]}
 🧩 ᴠᴇʀsɪᴏɴ: 7.9.8
 📚 ʟɪʙʀᴀʀʏ: Bot WhatsApp By WannTrue

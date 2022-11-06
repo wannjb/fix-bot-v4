@@ -33,9 +33,9 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 		]
 	}]
 	let listMessage = {
-		text: '*[ List Bug ]*\n\n*Note :* Jangan Gunakan Secara Sembarangan',
+		text: '*[ List Bug ]*\n\n*Note :* Jangan Gunakan Secara Sembarangan Bre',
 		footer: packname,
-		buttonText: 'Silahkan Klik Di Sini',
+		buttonText: 'Silahkan Klik Bre',
 		sections
 	}
 
@@ -250,7 +250,7 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 }
 
 handler.help = ['sendbugs <nomer>']
-handler.tags = ['premium']
+handler.tags = ['main']
 handler.command = /^((send)?(bugs?|virtex|virus))$/i
 
 export default handler

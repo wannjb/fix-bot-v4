@@ -1363,31 +1363,6 @@ export async function groupsUpdate(groupsUpdate) {
     }
 }
 
-/**
-Delete Chat
- */
-export async function deleteUpdate(message) {
-    try {
-        const { fromMe, id, participant } = message
-        if (fromMe)
-            return
-        let msg = this.serializeM(this.loadMessage(id))
-        if (!msg)
-            return
-        let chat = global.db.data.chats[msg.chat] || {}
-        if (chat.antidelete)
-            return
-            this.send2ButtonDoc(msg.key.remoteJid, `Terdeteksi *@${participant.split`@`[0]}* telah menghapus pesan.
-Untuk mematikan fitur ini, ketik
-*.off antidelete*
-
-Untuk menghapus pesan yang dikirim BOT, reply pesan dengan perintah
-*.delete*`, author, '🔖 Matikan Fitur', '.off antidelete', 'ℹ️ Menu', '.menu', msg, adReply)
-        this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
-    } catch (e) {
-        console.error(e)
-    }
-}
 
 global.dfail = (type, m, conn) => {
     let msg = {

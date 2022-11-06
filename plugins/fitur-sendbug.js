@@ -25,7 +25,7 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 			{ title: 'Bug Image', rowId: `${_p + command} bugimg ${text}` },
 			{ title: 'Bug Video', rowId: `${_p + command} bugvid ${text}` },
 			{ title: 'Bug Crash', rowId: `${_p + command} bugcrash ${text}` },
-			{ title: 'BugKontak', rowId: `${_p + command} bugkontak ${text}` },
+			{ title: 'Bug Kontak ERROR❗', rowId: `${_p + command} bugkontak ${text}` },
 			{ title: 'Bug ReactPc', rowId: `${_p + command} reactpc ${text}` },		
 			{ title: 'Bug Catalog', rowId: `${_p + command} bugcatalog ${text}` },
 			{ title: 'Bug TextCrash', rowId: `${_p + command} bugtextcrash ${text}` },
@@ -245,7 +245,7 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 			if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, m)
 			throw false
 	}
-	m.reply(`Berhasil Mengirim ${type} Di Nomer wa.me//${text}`)
+	m.reply(`Berhasil Mengirim ${type} Di Nomer wa.me//`)
 }
 
 handler.help = ['sendbugs <nomer>']

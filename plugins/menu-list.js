@@ -284,7 +284,7 @@ const sections = [
         title: `${htki} BONUS FREE - PREM ${htka}`,
         rows: [
             {title: `✉️ • UNCHEK FREE`, rowId: ".akun", description: "Menampilkan rules akun unchek "},
-            {title: `☠️ • SEND BUG`, rowId: ".sendbugs", description: "Menampilkan contoh cara sendbug "},
+            {title: `☠️ • SEND BUG`, rowId: ".sendbugs", description: "Menampilkan contoh penggunaan sendbug "},
         ]
       },{
         title: `${htki} SUPPORT ${htka}`,
@@ -572,7 +572,7 @@ Bot masih dalam pengembangan, jika anda menemukan bug/fitur error' harap dimaklu
 
     }
 
-    conn.reply(m.chat, '*Tunggu Sebentar Kak. . .*', ftrol) 
+    conn.reply(m.chat, '*Sabar ya Bre loading ni. . .*', ftrol) 
 
     
     //------------------< MENU >----------------
@@ -702,7 +702,7 @@ Bot masih dalam pengembangan, jika anda menemukan bug/fitur error' harap dimaklu
       ['sᴘᴇᴇᴅᴛᴇsᴛ', `${_p}speedtest`]
     ], m, {asLocation: true})*/
   } catch (e) {
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+    conn.reply(m.chat, 'Maaf Bre, menu sedang error', m)
     throw e
   }
 }

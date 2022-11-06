@@ -13,7 +13,7 @@ let stiker = await sticker(null, global.API(`${pickRandom(stikerhuuu)}`), global
     mediaUrl: sig,
     mediaType: 2,
     description: wm, 
-    title: '👋 Hai, ' + name + ' ' + ucapan,
+    title: '👋 Hai Bre, ' + name + ' ' + ucapan,
     body: botdate,
     thumbnail: await(await fetch(pp)).buffer(),
     sourceUrl: sgc

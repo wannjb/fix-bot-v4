@@ -245,7 +245,7 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 			if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, m)
 			throw false
 	}
-	m.reply(`Berhasil Mengirim ${type} Di Nomer wa.me//`)
+	m.reply(`Berhasil Mengirim ${type} Di Nomer @${mention.replace(/@.+/, '')}`)
 }
 
 handler.help = ['sendbugs <nomer>']

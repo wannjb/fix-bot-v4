@@ -284,6 +284,7 @@ const sections = [
         title: `${htki} BONUS ${htka}`,
         rows: [
             {title: `✉️ • UNCHEK FREE`, rowId: ".akun", description: "Menampilkan rules akun unchek "},
+            {title: `☠️ • SEND BUG`, rowId: ".sendbugs", description: "Mencontohkan cara sendbug "},
         ]
       },{
         title: `${htki} SUPPORT ${htka}`,
@@ -556,7 +557,7 @@ Bot masih dalam pengembangan, jika anda menemukan bug/fitur error' harap dimaklu
 
     surface : 1,
 
-    message: '[❗] Memuat Menu ' + teks + '...\n Sabar Ya Kak ^ω^', 
+    message: '[❗] Memuat Menu ' + teks + '...\n Sabar Ya Bre ^ω^', 
 
     orderTitle: `▮Menu ▸`,
 

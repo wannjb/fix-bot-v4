@@ -14,7 +14,7 @@ ${link}
 📛 *E x p i r e d :* ${isTele ? 'No Expiry Date' : 'Unknown'}`)
 }
 handler.help = ['upload (reply media)', 'tourl (reply media)']
-handler.tags = ['tools', 'limitmenu']
+handler.tags = ['tools']
 handler.command = /^(tourl|upload)$/i
 handler.limit = true
 export default handler

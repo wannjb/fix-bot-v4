@@ -339,8 +339,9 @@ let tek = `✧────···[ Dashboard ]···────✧
 ┬
 │${emot} 「 Hai Bre👋 」
 ├❖ 「 ${conn.getName(m.sender)} 」
-├❖  Sudah sunat? 👩‍⚕️
-├❖  Belum sunat gak boleh pakai bot kami
+├❖  Sudah sunatkah Bre? 👩‍⚕️
+├❖  Belum sunat
+├❖  Gak boleh pakai bot kami
 ├❖  Khusus yang sudah sunat
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
@@ -372,7 +373,7 @@ let tek = `✧────···[ Dashboard ]···────✧
 ╰━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
-  footer: `⚠️ *Note* : 
+  footer: `⚠️ *Note* : DIBACA YA BRE :v
 Bot masih dalam pengembangan, jika anda menemukan bug/fitur error' harap dimaklumi  \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ${nameown}\n\n${botdate}\n\n${wm2}`,
   mentions: await conn.parseMention(tek),
   title: ``,

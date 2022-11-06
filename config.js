@@ -1,28 +1,10 @@
-// S C R I P T  O R I  B Y  Bochilgaming And KANNACHAN 🔭
-// Ditulis Ulang Oleh WH MODS DEV
-// Credits, jangan dihapus atau diubah!
-
-// - - THANKS TO - -
-// • Allah SWT
-// • Nurutomo
-// • Bochilgaming
-// • Rominaru
-// • Kannachann
-// • FahriAdison
-// • The.Sad.Boy01
-// • Rlxfly
-// • Rasel comel
-// • ImYanXiao
-// • WH MODS DEV
-// • Xtreshe
-// • Dll
-
-//[!] Jangan Lupa Ganti Ownernya
+//[!] Jangan Dihapus, mending ditambahin 
 
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import moment from 'moment-timezone'
+import { group } from 'console'
 
 /*============= WAKTU =============*/
 let wibh = moment.tz('Asia/Jakarta').format('HH')
@@ -48,53 +30,38 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 /*============== SOCIAL ==============*/
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-
-global.sig = 'https://instagram.com/mhdkrnwnn_' // ig
-global.sgh = 'https://github.com/wannjb' // github
-global.sgc = 'https://chat.whatsapp.com/GwCTefLrBr85NFFrqDE1pK' // group whatsapp
-global.sdc = 'https://www.discord.com'//discord
+global.sig = 'https://instagram.com/_ctzhid'
+global.sgh = '-' //github
+global.sgc = 'https://chat.whatsapp.com/Iu9I1k8FnXW1sXT41XIF50' //group whatsapp
+global.sdc = '-' //discord
 global.snh = 'https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow' // my youtube channel
-global.sfb = 'https://www.facebook.com/' // facebook
-global.syt = 'https://www.youtube.com/' // my youtube channel "kalau ada yt ke 2 tarok link nya disini"
 
 /*============== PAYMENT ==============*/
-global.pdana = '0895327999292' //dana
-global.povo = '0895327999292' //ovo
-global.pgopay = '079518377899' //gopay
-global.plinkaja = '-' //link aja
-global.ppulsa = '0895327999292' //telkomsel
-global.ppulsa2 = '-' // kalau ada kartu lain isi aja
-global.psaweria = '-'
+global.pdana = '08XXXXXXXXXX' //dana
+global.povo = '08XXXXXXXXXX' //ovo
+global.pgopay = '08XXXXXXXXXX' //gopay
+global.plinkaja = '08XXXXXXXXXX' //link aja
+global.ppulsa = '08XXXXXXXXXX' //telkomsel
+global.ppulsa2 = '08XXXXXXXXXX' // kalau ada kartu lain isi aja
+global.psaweria = 'https://saweria.com/mrw4h1d'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6289518377899'
-global.nomorown = '62895327999292'
-global.namebot = 'WannTrue BOT'
-global.nameown = 'WannTrue'
-global.nameown1 = 'Facebook'
-global.nomorown1 = '447710173736'
-global.nomorown2 = '62895327999292'
-global.nomorwa = '0'
-
-/*============== Github Thanks To ==============*/
-global.namagithub = 'wannjb' // nama github lu
-global.linkgithub = 'https://github.com/wannjb' // tarok link github lu
-
-// klau kgk ada github kasih tanda '-' aja biar kgk error
+global.nomorbot = '628XXXXXXXXXX'
+global.nomorown = '628XXXXXXXXXX'
+global.namebot = 'WH-MODS-BOT-V1'
+global.nameown = 'WH MODS DEV'
 
 /*============== APIKEY SIMPEL ==============*/
 global.zenzkey = 'b8040941f7'
-global.lolkey = 'e54205a4ca2caa368cc067bb' // PUNYA WAHID  8e66d0934cf741bfd2182c16
+global.lolkey = '8e66d0934cf741bfd2182c16' // PUNYA WAHID 357d3c85079c4e0818731e6b
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['62895327999292', 'WannTrue', true],
-  ['-', 'ISI KALAU ADA', true],
-  ['-', 'ISI KALAU ADA', true],
-  ['-', 'ISI KALAU ADA', true],
-  ['-', 'ISI KALAU ADA', true]
-    //Ganti jd nomormu sama Namamu
+  ['628XXXXXXXXXX', 'WH MODS DEV', true],
+  ['-', 'isi_kalau_ada', true],
+  ['-', 'isi_kalau_ada', true],
+  ['-', 'isi_kalau_ada', true] //Ganti jd nomormu sama Namamu
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -142,19 +109,13 @@ global.APIKeys = { // APIKey Here
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
 /*============== WATERMARK ==============*/
-global.wm = '                「 WannTrue 」' //Main Watermark
-global.wm2 = '© WannTrue'
-global.wm3 = '⫹⫺ WannTrue BOT '
+global.wm = '                「 WH-MODS-BOT-V1 」' //Main Watermark
+global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘WH-MODS-BOT-V1 ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
+global.wm3 = '⫹⫺ WH-MODS-BOT-V1 '
 global.botdate = `⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `T I M E : ${wktuwib}`
-global.titlebot = `⫹⫺ WhatsApp Bot | By Ricky`
-global.packname = '☂︎ ᴄʀᴇᴀᴛᴇᴅ ʙʏ'
-global.author = '「 WannTrue 」'
-
-/*Fake*/
-global.fsizedoc = '1'.repeat(10)
-global.fpagedoc = '1'.repeat(10)
-global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
+global.titlebot = `⫹⫺ WhatsApp Bot | By WH-MODS-DEV`
+global.author = '                「 WH-MODS-BOT-V1  あ」'
 
 
 /*============== LOGO ==============*/
@@ -228,8 +189,8 @@ global.htjava = '⫹⫺'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
-global.stickpack = 'WannTrue Bot'
-global.stickauth = `By © WannTrue`
+global.stickpack = 'WH-MODS-BOT-V1'
+global.stickauth = `By ©WH-MODS-DEV`
 
 global.multiplier = 38 // The higher, The harder levelup
 
@@ -312,8 +273,3 @@ watchFile(file, () => {
   console.log(chalk.redBright("Update 'config.js'"))
   import(`${file}?update=${Date.now()}`)
 })
-
-//------ FUNCTION
-function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
-}

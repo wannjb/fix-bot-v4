@@ -572,7 +572,7 @@ Bot masih dalam pengembangan, jika anda menemukan bug/fitur error' harap dimaklu
 
     }
 
-    conn.reply(m.chat, '*Sabar ya Bre loading ni. . .*', ftrol) 
+    conn.reply(m.chat, '*Sabar ya Bre, loading ni. . .*', ftrol) 
 
     
     //------------------< MENU >----------------
@@ -631,7 +631,7 @@ Bot masih dalam pengembangan, jika anda menemukan bug/fitur error' harap dimaklu
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://github.com/WH-MODS-BOT/'
+                        url: 'https://github.com/wannjb'
                     }
                 },
                 {

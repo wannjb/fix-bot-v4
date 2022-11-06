@@ -32,7 +32,7 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 		]
 	}]
 	let listMessage = {
-		text: '*[ List Bug ]*\n\n*Note :* Jangan Gunakan Secara Sembarangan Bre',
+		text: '*[ List Bug ]*\n\n*Note :* Gunakan +62 dan isi nomor yg bener Bre ',
 		footer: packname,
 		buttonText: 'Silahkan Klik Bre',
 		sections
@@ -245,8 +245,7 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 			if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, m)
 			throw false
 	}
-	m.reply(`Berhasil Mengirim ${type} Di Nomer ${text}@s.whatsapp.net
-NOTE ⚠️ > INGAT GUNAKAN +62 DAN ISIKAN NOMORNYA DENGAN BENAR JIKA ASAL ASALAN BOT TIDAK AKAN BERJALAN`)
+	m.reply(`Berhasil Mengirim ${type} Di Nomer ${text}@s.whatsapp.net`)
 }
 
 handler.help = ['sendbugs <nomer>']

@@ -1377,9 +1377,12 @@ export async function deleteUpdate(message) {
         let chat = global.db.data.chats[msg.chat] || {}
         if (chat.antidelete)
             return
-            this.send2ButtonDoc(msg.key.remoteJid, `Terdeteksi *@${participant.split`@`[0]}* telah menghapus pesan.
+            this.send2ButtonDoc(msg.key.remoteJid, `Terdeteksi @${participant.split`@`[0]} telah menghapus pesan
 Untuk mematikan fitur ini, ketik
-*.off antidelete*
+*.enable delete*
+`.trim(), msg, {
+            mentions: [participant]
+        })
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
         console.error(e)

@@ -82,14 +82,14 @@ const listMessage = {
         }
       chat.autoReply = isEnable
       break
-    case 'antiVirtex':
+    case 'antidelete':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn)
           throw false
         }
       }
-      chat.antiVirtex = isEnable
+      chat.antidelete = isEnable
       break
     case 'delete':
       if (m.isGroup) {
@@ -150,13 +150,22 @@ const listMessage = {
           global.dfail('rowner', m, conn)
           throw false
         }}
-      chat.premnsfw = isEnable
+      chat.antiToxic = isEnable
       break
-    // case 'toxic':
-    //   if (m.isGroup) {
-    //     if (!(isAdmin || isOwner)) {
-    //       global.dfail('admin', m, conn)
-    //       throw false
+    case 'antivirtex':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiVirtex = isEnable
+      break
+    case 'antitoxic':
+      isAll = true
+      if (!isOwner) {
+        global.dfail('owner', m, conn)
+        throw false
     //     }
     //   }
     //   chat.antiToxic = !isEnable

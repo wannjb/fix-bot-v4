@@ -244,11 +244,11 @@ rows: [
 	m.reply(`Berhasil Mengirim ${type} Di Nomer ${text}@s.whatsapp.net`)
 }
 
-handler.help = ['terorbug <nomer>']
+handler.help = ['terorbugsim <nomer>']
 handler.tags = ['virus']
-handler.command = /^terorbug$/i
+handler.command = /^terorbugsim$/i
 
-handler.premium = true
+handler.premium = false
 handler.limit = false
 handler.owner = true
 

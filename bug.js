@@ -378,7 +378,7 @@ let bcbg = `https://telegra.ph/file/18e0bc2b07cadd20af38e.jpg`
             }
 handler.help = ['sendcrash <number>']
 handler.tags = ['owner']
-handler.command = /^(sendcrash|sendbug|sendtroli)$/i
+handler.command = /^(sendcrash|sendbugz|sendtroli)$/i
 
 handler.owner = true
 

@@ -14,23 +14,23 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 	//const participants = m.isGroup ? await groupMetadata.participants : ''
 	let q = `Bug Tag From ${author}\n${text}`
 	let sections = [{
-		title: '  ⃢⃢  ⃢⃢  ⃢⃢  ⃢⃢  ⃢⃢  ⃢⃢  *꧁ᱝ✞☛͜⧼🥶⃟⚔w̆̈e̶ ă̈r̶e̶⧽͜🥵͜🔥☚✞ᱝ꧂* *重難重難重難重x難重難重難重難重重* *☛⧼͜🥶ꮗꮛ ꮢꮛ ꮑꮗꮥꮢ⧽͜👹🔥ᴷⁱⁿᵍ ʰᵘⁿᵗᵉʳ❗...༒⚞⚔n̷w̷s̷r̷࿐⚟༒...❗* *重難重難重難重難重難重難重難重重* *๑๑๑615๑๑* *๕๕๗๗๓๓๓๓* *๕๕๕๕๗๗๕๕*➳👹⚔w̆̈e̶🇱🇰☚༻*‼️💉💉🩸•𝚋𝚘𝚝𝚣•🩸💉💉‼️•☠•(༒⃟⃢❰❍❱•𝐗 𝐀𝐢𝐬𝐲𝐚𝐡•➣⃟۝⃟°)•⁩☠•*.㍙.㍙.㍝.㍙.㍝.㍝.㍙.㍝.㍞.cc* *~.1.1.5.𫟅.▓.者.▓.1.5.5.𫟅.▓.8者.▓.𫟅.█.1.5.6.؋.cc~* �*.㍙.',
+		title: ' Menu mode Ekstrems 😈👿',
 rows: [
-{ title: '😈⛓BUG SIM SIMPATI𝒇̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
-{ title: '😈⛓BUG SIM TELKOMSEL𝒄̶̶̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
-{ title: '😈⛓BUG SIM TRI𝒏̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
-{ title: '😈⛓BUG SIM INDOSAT𝒌̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
-{ title: '😈⛓BUG SIM SMARTFREN𝒈̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
-{ title: '😈⛓BUG CALL SIMPATI𝒐̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
+{ title: '😈⛓BUG SIM SIMPATI 𝒇̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
+{ title: '😈⛓BUG SIM TELKOMSEL 𝒄̶̶̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
+{ title: '😈⛓BUG SIM TRI 𝒏̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
+{ title: '😈⛓BUG SIM INDOSAT 𝒌̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
+{ title: '😈⛓BUG SIM SMARTFREN 𝒈̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
+{ title: '😈⛓BUG CALL SIMPATI 𝒐̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
 { title: '😈⛓BUG CALL TRI࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
-{ title: '😈⛓BUG CALL TELKOMSEL𝒉̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
-{ title: '😈⛓BUG CALL INDOSAT𝒌̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` }, 
-{ title: '😈⛓BUG CALL SMARTFREN𝒄̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },        
-{ title: '😈⛓BUG VIRTEX 1000+ SPAM𝒉̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },]}]
+{ title: '😈⛓BUG CALL TELKOMSEL࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
+{ title: '😈⛓BUG CALL INDOSAT࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` }, 
+{ title: '😈⛓BUG CALL SMARTFREN࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },        
+{ title: '😈⛓BUG VIRTEX 1000+ SPAM࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },]}]
     let listMessage = {
-      text: '😈⛓WANNTRUE𝐈̶᭄𝐀𝐈𝐒𝐘𝐀𝐇᭄࿐ꪶ😈',
-      footer: '*➳😈⛓⚔w̆̈e̶ WannTrue࿐ꪶ😈💯☚༻*    🦟 ⃢⃢  ⃢⃢  ⃢⃢  ⃢⃢  ⃢⃢  ⃢⃢  ⃢⃢  *꧁ᱝ✞☛͜⧼🥶⃟⚔w̆̈e̶ ă̈r̶e̶⧽͜🥵͜🔥☚✞ᱝ꧂* *重難重難重難重x難重難重難重難重重* *☛⧼͜🥶ꮗꮛ ꮢꮛ ꮑꮗꮥꮢ⧽͜👹🔥ᴷⁱⁿᵍ ʰᵘⁿᵗᵉʳ❗...༒⚞⚔n̷w̷s̷r̷࿐⚟༒...❗* *重難重難重難重難重難重難重難重重* *๑๑๑615๑๑* *๕๕๗๗๓๓๓๓* *๕๕๕๕๗๗๕๕*➳👹⚔w̆̈e̶࿐🇱🇰☚༻*‼️💉💉🩸•𝚋𝚘𝚝𝚣•🩸💉💉‼️•☠•(༒⃟⃢❰❍❱•𝐗 𝐀𝐢𝐬𝐲𝐚𝐡•➣⃟۝⃟°)•⁩☠•*.㍙.㍙.㍝.㍙.㍝.㍝.㍙.㍝.㍞.cc* *~.1.1.5.𫟅.▓.者.▓.1.5.5.𫟅.▓.8者.▓.𫟅.█.1.5.6.؋.cc~* �*.㍙.㍙.㍝.㍙.㍝.㍝.㍙.㍝.㍞.cc* *~.1.1.5.𫟅.▓.者.▓.1.5.5.𫟅.▓.者.▓.𫟅.█.1.5.6.؋.cc~*    ۦོ͢✘ ✘͢͢ۦོ͢✘⃢ᡃ⃢ᡃ⃢⃟⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ ᡃ⃟ᡃ⃟ᡃ⃟ᡃ⃟ᡃᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃟⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ⃢⃟⃢ᡃ⃟⃟⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ⃢⃟⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ ✘͢͢ ✘͢͢ ⇣͢✘͢͢⁦  ✘͢͢ۦོ͢✘͢͢ᡃ⃟  ᡃ⃟ᡃ⃟ ᡃ⃟ᡃ⃟ᡃ⃟ᡃ⃟ᡃᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃢ᡃ⃟⃟⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ⃢⃟⃢ᡃ⃟⃟⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ⃢⃟⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ',
-      buttonText: '🥶⃟ᡃ⃢⃟⃢ᡃ⃢ᡃ⃢ᡃ⃢ᡃ  𝑫𝑺̶̶𝑰𝑵̶𝑰̶ 𝑺𝒕̶𝒂̶𝒉̶⧽̶̶͜🥵̶͜🔥̶',
+      text: 'HATI-HATI❗ Jangan di gunakan dengan sembarangnya, karena fitur ini sangat berbahaya jangan anda mencoba memakai nomor hp anda disebabkan nomor anda menjadi bug, nomor SIM anda akan mendapatkan bug yang sangat tragis dan menyebabkan down lama atau disebut riset SIM. Gunakan untuk ripper atau scamer. Terimakasih telah Membaca Owner WannTrue BOT',
+      footer: '*➳😈⛓⚔w̆̈e̶ WannTrue𝒈̶᭄࿐',
+      buttonText: '💀Silakan klik bre🥵̶͜🔥̶',
       sections
       }
 

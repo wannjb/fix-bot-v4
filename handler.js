@@ -1375,7 +1375,7 @@ export async function deleteUpdate(message) {
         if (!msg)
             return
         let chat = global.db.data.chats[msg.chat] || {}
-        if (chat.antidelete)
+        if (chat.antidelet)
             return
             this.send2ButtonDoc(msg.key.remoteJid, `Terdeteksi @${participant.split`@`[0]} telah menghapus pesan
 Untuk mematikan fitur ini, ketik

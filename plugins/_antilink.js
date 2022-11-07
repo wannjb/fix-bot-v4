@@ -11,7 +11,7 @@ export async function before(m, { conn, isAdmin, isBotAdmin }) {
 			if (m.text.includes(linkThisGroup)) return !0
 		}
 		if (!m.fromMe && isBotAdmin) await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.id, participant: m.sender } })
-		await conn.sendMessage(m.chat, { text: `@${(m.sender || '').replace(/@s\.whatsapp\.net/g, '')} *terdeteksi* mengirim Link Group!`, mentions: [m.sender] }, { quoted: fkontak })
+		await conn.sendMessage(m.chat, { text: `@${(m.sender || '').replace(/@s\.whatsapp\.net/g, '')} *terdeteksi* mengirim link grup!, Minimal liat deks dek, bukan masuk langsung share link `, mentions: [m.sender] }, { quoted: fkontak })
 	}
 	return !0
 }

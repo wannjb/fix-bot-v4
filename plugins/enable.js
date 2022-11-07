@@ -11,7 +11,6 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 	{title: "⦅🌟⦆ ✦ PremNsfwChat", rowId: `${usedPrefix + command} premnsfwchat`},
 	{title: "⦅🔗⦆ ✦ Antilink", rowId: `${usedPrefix + command} antilink`},
 	{title: "️⦅🖼️⦆ ✦ Antisticker", rowId: `${usedPrefix + command} antisticker`},
-	{title: "⦅⛔⦆ ✦ Antidelete", rowId: `${usedPrefix + command} antidelete`},
 	{title: "⦅📛⦆ ✦ Antitoxic", rowId: `${usedPrefix + command} antitoxic`},
 {title: "⦅📛⦆ ✦ Antivirtex", rowId: `${usedPrefix + command} antivirtex`},
 	{title: "⦅⬆️⦆ ✦ Autolevelup", rowId: `${usedPrefix + command} autolevelup`},
@@ -127,20 +126,12 @@ const listMessage = {
       }
       chat.delete = isEnable
       break
-    case 'antidelete':
+    case 'anticall':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn)
           throw false
         }
-      }
-      chat.delete = !isEnable
-      break
-    case 'anticall':
-      isAll = true
-      if (!isOwner) {
-        global.dfail('owner', m, conn)
-        throw false
       }
       chat.anticall = isEnable
       break

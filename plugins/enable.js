@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 	const sections = [
    {
-	title: `${htki} OPTIONS ${htka}`,
+	title: `${htki} Menu ON/OFF ${htka}`,
 	rows: [
 	    {title: "⦅✨⦆ ✦ Welcome", rowId: `${usedPrefix + command} welcome`},
 	    {title: "⦅🚫⦆ ✦ Delete", rowId: `${usedPrefix + command} delete`},

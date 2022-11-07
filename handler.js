@@ -560,7 +560,7 @@ export async function handler(chatUpdate) {
         if (opts['pconly'] && m.chat.endsWith('g.us'))
             return
         if (opts['gconly'] && !m.chat.endsWith('g.us') && !m.fromMe)
-            return conn.reply(m.chat, 'Bot Sedang Dalam Mode Khusus GGonly\nMasuk Gc Biar Bisa Pake\n[ Link ]\nhttps://chat.whatsapp.com/KS51Xw91eju8HTv5owtV1z', fkontak)
+            return conn.reply(m.chat, 'Bot Sedang Dalam Mode Khusus GGonly\nMasuk Gc Biar Bisa Pake\n[ Link ]\nhttps://chat.whatsapp.com/GwCTefLrBr85NFFrqDE1pK', fkontak)
         if (opts['swonly'] && m.chat !== 'status@broadcast')
             return
         if (typeof m.text !== 'string')

@@ -14,7 +14,7 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 	//const participants = m.isGroup ? await groupMetadata.participants : ''
 	let q = `Bug Tag From ${author}\n${text}`
 	let sections = [{
-		title: ' Menu mode Ekstrems 😈👿',
+		title: 'Menu mode Ekstrems 😈👿',
 rows: [
 { title: '😈⛓BUG SIM SIMPATI 𝒇̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },
 { title: '😈⛓BUG SIM TELKOMSEL 𝒄̶̶̶᭄࿐ꪶ😈', rowId: `${_p}${command} .tipu ${text}` },

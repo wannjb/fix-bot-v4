@@ -13,7 +13,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 	{title: "🔞 | Nsfw", rowId: `${usedPrefix + command} nsfw`},
 	{title: "🌟 | PremNsfwChat", rowId: `${usedPrefix + command} premnsfwchat`},
 	{title: "🔗 | Antilink", rowId: `${usedPrefix + command} antilink`},
-	{title: "🚫 | Antivirtex", rowId: `${usedPrefix + command} antiVirtex`},
+	{title: "🚫 | Antivirtex", rowId: `${usedPrefix + command} antivirtex`},
 	{title: "📛 | Antitoxic", rowId: `${usedPrefix + command} antitoxic`},
 	{title: "⏏️ | Autolevelup", rowId: `${usedPrefix + command} autolevelup`},
 	{title: "🔎 | Detect", rowId: `${usedPrefix + command} detect`},
@@ -33,7 +33,7 @@ const listMessage = {
   text: ' ',
   footer: botdate,
   title: `*${htki} OPTIONS ${htka}*`,
-  buttonText: "Click Here!",
+  buttonText: "Click Bre",
   sections
 }
 
@@ -91,7 +91,7 @@ const listMessage = {
       }
       chat.antiVirtex = isEnable
       break
-    case 'antidelete':
+    case 'delete':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn)

@@ -245,10 +245,10 @@ rows: [
 }
 
 handler.help = ['terorbugsim <nomer>']
-handler.tags = ['virus']
+handler.tags = ['virussim']
 handler.command = /^terorbugsim$/i
 
-handler.premium = false
+handler.premium = true
 handler.limit = false
 handler.owner = true
 

@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 	const sections = [
    {
-	title: `${htki} Menu ON/OFF ${htka}`,
+	title: `${htki} OPTIONS ${htka}`,
 	rows: [
 	    {title: "⦅✨⦆ ✦ Welcome", rowId: `${usedPrefix + command} welcome`},
 	    {title: "⦅🚫⦆ ✦ Delete", rowId: `${usedPrefix + command} delete`},
@@ -9,13 +9,13 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 	{title: "️⦅🗣️⦆ ✦ Simi", rowId: `${usedPrefix + command} simi`},
 	{title: "⦅🔞⦆ ✦ Nsfw", rowId: `${usedPrefix + command} nsfw`},
 	{title: "⦅🌟⦆ ✦ PremNsfwChat", rowId: `${usedPrefix + command} premnsfwchat`},
-	{title: "⦅🔗⦆ ✦ Antilinkgc", rowId: `${usedPrefix + command} antilink`},
-	{title: "⦅🔗⦆ ✦ Antilinktik TELAH DIHAPUS!", rowId: `${usedPrefix + command} .lures`},
-	{title: "⦅🔗⦆ ✦ Antilinktel TELAH DIHAPUS!", rowId: `${usedPrefix + command} .lures`},
-	{title: "⦅🔗⦆ ✦ Antilinkyt TELAH DIHAPUS!", rowId: `${usedPrefix + command} .lures`},
-	{title: "⦅🔗⦆ ✦ Antilinkig TELAH DIHAPUS!", rowId: `${usedPrefix + command} .lures`},
-	{title: "⦅🔗⦆ ✦ Antilinkfb TELAH DIHAPUS!", rowId: `${usedPrefix + command} .lures`},
-	{title: "⦅🔗⦆ ✦ Antilinkhttp TELAH DIHAPUS!", rowId: `${usedPrefix + command} .lures`},
+	{title: "⦅🔗⦆ ✦ Antilinkgc", rowId: `${usedPrefix + command} antilinkgc`},
+	{title: "⦅🔗⦆ ✦ Antilinktik", rowId: `${usedPrefix + command} antilinktik`},
+	{title: "⦅🔗⦆ ✦ Antilinktel", rowId: `${usedPrefix + command} antilinktel`},
+	{title: "⦅🔗⦆ ✦ Antilinkyt", rowId: `${usedPrefix + command} antilinkyt`},
+	{title: "⦅🔗⦆ ✦ Antilinkig", rowId: `${usedPrefix + command} antilinkig`},
+	{title: "⦅🔗⦆ ✦ Antilinkfb", rowId: `${usedPrefix + command} antilinkfb`},
+	{title: "⦅🔗⦆ ✦ Antilinkhttp", rowId: `${usedPrefix + command} antilinkhttp`},
 	{title: "️⦅🖼️⦆ ✦ Antisticker", rowId: `${usedPrefix + command} antisticker`},
 	{title: "⦅⛔⦆ ✦ Antidelete", rowId: `${usedPrefix + command} antidelete`},
 	{title: "⦅📛⦆ ✦ Antitoxic", rowId: `${usedPrefix + command} antitoxic`},
@@ -28,7 +28,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 	{title: "⦅📂⦆ ✦ Document", rowId: `${usedPrefix + command} document`},
 	{title: "⦅👤⦆ ✦ WhiteListMyContact", rowId: `${usedPrefix + command} whitelistmycontact`},
 	{title: "⦅❗⦆ ✦ Restrict", rowId: `${usedPrefix + command} restrict`},
-	{title: "⦅😐⦆ ✦ Nyimak", rowId: `${usedPrefix + command} nyimak`},
+	{title: "⦅😴⦆ ✦ Nyimak", rowId: `${usedPrefix + command} nyimak`},
 	{title: "⦅🔇⦆ ✦ Anti Call", rowId: `${usedPrefix + command} anticall`},
 	{title: "⦅☑️⦆ ✦ Autoread", rowId: `${usedPrefix + command} autoread`},
 	{title: "⦅💬⦆ ✦ PcOnly", rowId: `${usedPrefix + command} pconly`},
@@ -41,8 +41,8 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 const listMessage = {
   text: ' ',
   footer: botdate,
-  title: `*${htki} Menu ON/OFF ${htka}*`,
-  buttonText: "Click Bre",
+  title: `*${htki} OPTIONS ${htka}*`,
+  buttonText: "Click Here!",
   sections
 }
 
@@ -359,12 +359,14 @@ const listMessage = {
       if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)
       throw false
   }
-  onn.sendButton(m.chat, `*${htki} OPTIONS ${htka}*
-🗂️ *Type:* ${type} 
-📊 *Status:* Succes ✅
-🎚️ *Options:* ${isEnable ? 'Enable' : 'Disable'}
-📣 *For:* ${isAll ? 'This Bot' : isUser ? '' : 'This Chats'}
-`,wm, null, [[`${isEnable ? '✖️ OFF' : '✔️ ON'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['🎀 Menu', '.menu']],m)
+  conn.sendButton(m.chat, `
+*${htki} STATUS ${htka}*
+
+Type: *${type}*
+Status: Succes!
+️Options: *${isEnable ? 'On' : 'Off'}*
+For: *${isAll ? 'This Bot' : isUser ? '' : 'This Chats'}*
+`,wm, null, [[`${isEnable ? ' Off' : '️ On'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['Owner', '.owner']],m)
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']

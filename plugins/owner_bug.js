@@ -251,6 +251,6 @@ handler.command = /^terorsim$/i
 
 handler.premium = false
 handler.limit = false
-handler.owner = true
+handler.owner = false
 
 export default handler

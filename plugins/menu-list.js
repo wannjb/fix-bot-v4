@@ -277,7 +277,8 @@ const sections = [
         {title: `⚡ • SPEED BOT`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
         {title: `❗ • RULES BOT`, rowId: ".rules", description: "Menampilkan  Rules BOT"},
         {title: `🤴 • OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
-        {title: `⏰ • RUNTIME BOT`, rowId: ".runtime", description: "Menampilkan  Waktu BOT Berjalan"}, 
+        {title: `⏰ • RUNTIME BOT`, rowId: ".runtime", description: "Menampilkan  Waktu BOT Berjalan"},
+        {title: `💫 • BOSTING BOT`, rowId: ".boosting", description: 'Bosting bot agar fastrespons'}, 
         {title: `💌 • SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
     ]
       },{
@@ -292,7 +293,7 @@ const sections = [
         rows: [
             {title: `✍️ • SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
             {title: `🌟 • BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
-            {title: `💸 • DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
+            {title: `💸 • DONASI`, rowId: ".donasi", description: 'Belajar ngemis coy'},
         ]
         },{
           title: `${htki} MENU MENFESS ${htka}`,

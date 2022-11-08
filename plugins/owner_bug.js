@@ -17,18 +17,16 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 	let sections = [{
 		title: ' MENU BUG EKSTRIMS 💀',
 rows: [
-{ title: '😈⛓BUG SIM SIMPATI𝒇̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
-{ title: '😈⛓BUG SIM TELKOMSEL𝒄̶̶̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
-{ title: '😈⛓BUG SIM TRI𝒏̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
-{ title: '😈⛓BUG SIM INDOSAT𝒌̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
-{ title: '😈⛓BUG SIM SMARTFREN𝒈̶᭄࿐ꪶ😈', rowId: `${_p}${command} .
-unban ${text}` },
-{ title: '😈⛓BUG CALL SIMPATI𝒐̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
-{ title: '😈⛓BUG CALL TRI࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
-{ title: '😈⛓BUG CALL TELKOMSEL𝒉̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
-{ title: '😈⛓BUG CALL INDOSAT𝒌̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` }, 
-{ title: '😈⛓BUG CALL SMARTFREN𝒄̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },        
-{ title: '😈⛓BUG VIRTEX 1000+ SPAM𝒉̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },]}]
+{title: `'😈⛓BUG SIM SIMPATI𝒇̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO BUG"},
+{title: `😈⛓BUG SIM TELKOMSEL𝒄̶̶̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO BUG"},
+{title: `'😈⛓BUG SIM TRI𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO BUG"},
+{title: `'😈⛓BUG SIM SMARTFREN 𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO BUG"},
+{title: `😈⛓BUG SIM INDOSAT𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO BUG"},
+{title: `😈⛓BUG CALL SIMPATI𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR?"},
+{title: `😈⛓BUG CALL TELKOMSEL𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR"},
+{title: `😈⛓BUG CALL TRI𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR"},
+{title: `😈⛓BUG CALL SMARTFREN𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR"},
+{title: `😈⛓BUG CALL INDOSAT𝒏̶᭄࿐ꪶ😈`, rowId: ".unban", description: "LET'S GO TEROR"},]}]
     let listMessage = {
       text: 'HATI-HATI OWNER❗ Jangan di gunakan dengan sembarangan, karena fitur ini sangat berbahaya jangan anda mencoba memakai nomor hp anda disebabkan nomor anda diteror, nomor SIM anda akan mendapatkan *TERORAN ERROR* yang sangat tragis dan menyebabkan down atau disebut riset SIM. *GUNAKAN UNTUK RIPPER ATAU SCAMER!*. Terimakasih telah Membaca Owner WannTrue BOT',
       footer: '*➳😈⛓⚔w̆̈e̶ WannTrue࿐ꪶ😈',

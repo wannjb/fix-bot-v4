@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 	const sections = [
    {
-	title: `${htki} OPTIONS ${htka}`,
+	title: `${htki} ON/OFF ${htka}`,
 	rows: [
 	    {title: "⦅✨⦆ ✦ Welcome", rowId: `${usedPrefix + command} welcome`},
 	    {title: "⦅🚫⦆ ✦ Delete", rowId: `${usedPrefix + command} delete`},
@@ -11,7 +11,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 	{title: "⦅🌟⦆ ✦ PremNsfwChat", rowId: `${usedPrefix + command} premnsfwchat`},
 	{title: "⦅🔗⦆ ✦ Antilink", rowId: `${usedPrefix + command} antilink`},
 	{title: "️⦅🖼️⦆ ✦ Antisticker", rowId: `${usedPrefix + command} antisticker`},
-	{title: "⦅📛⦆ ✦ Antitoxic", rowId: `${usedPrefix + command} antitoxic`},
+	{title: "⦅📛⦆ ✦ Antimodus", rowId: `${usedPrefix + command} antimodus`},
 {title: "⦅📛⦆ ✦ Antivirtex", rowId: `${usedPrefix + command} antivirtex`},
 	{title: "⦅⬆️⦆ ✦ Autolevelup", rowId: `${usedPrefix + command} autolevelup`},
 	{title: "⦅🎶⦆ ✦ Autodelvn", rowId: `${usedPrefix + command} autodelvn`},
@@ -91,14 +91,14 @@ const listMessage = {
       }
       chat.descUpdate = isEnable
       break
-    case 'antitoxic':
+    case 'antimodus':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn)
           throw false
         }
       }
-      chat.antiToxic = isEnable
+      chat.antiModus = isEnable
       break
     case 'antivirtex':
       if (m.isGroup) {

@@ -37,7 +37,7 @@ export async function before(m, { conn, args, usedPrefix, command, isAdmin, isBo
     let hapus = m.key.participant
     let bang = m.key.id
     
-    if (chat.antiToxic && isAntiToxic) {
+    if (chat.antiModus && isAntiModus) {
         await conn.sendButton(m.chat, `*PENIPU HANDAL TERDETEKSI* ${isBotAdmin ? '' : '\n\n_Bot bukan atmin_'}`, author, ['off antimodus', '/disable antimodus'], m)
         if (isBotAdmin && bot.restrict) {
             // await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')

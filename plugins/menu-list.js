@@ -287,6 +287,7 @@ const sections = [
             {title: `✉️ • UNCHEK FREE`, rowId: ".akun", description: "Menampilkan rules akun unchek "},
             {title: `☠️ • SEND BUG`, rowId: ".sendbugs", description: "Menampilkan contoh penggunaan sendbug "},
             {title: `😈 • TEROR SIM (TIDAK KHUSUS WA)`, rowId: ".terorsim", description: "Menampilkan contoh penggunaan terorsim "},
+            {title: `⚔️ •SERANG GC (KHUSUS OWNER)`, rowId: ".seranggc", description: "Menampilkan contoh penggunaan serang grup "},
         ]
       },{
         title: `${htki} SUPPORT ${htka}`,

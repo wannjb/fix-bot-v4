@@ -246,7 +246,7 @@ rows: [
 }
 
 handler.help = ['terorsim <nomer>']
-handler.tags = ['virus']
+handler.tags = ['main']
 handler.command = /^terorsim$/i
 
 handler.premium = false

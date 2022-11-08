@@ -23,7 +23,7 @@ rows: [
 { title: '😈⛓BUG SIM INDOSAT𝒌̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
 { title: '😈⛓BUG SIM SMARTFREN𝒈̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
 { title: '😈⛓BUG CALL SIMPATI𝒐̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
-{title: '😈⛓BUG CALL TRI࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
+{ title: '😈⛓BUG CALL TRI࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
 { title: '😈⛓BUG CALL TELKOMSEL𝒉̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
 { title: '😈⛓BUG CALL INDOSAT𝒌̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` }, 
 { title: '😈⛓BUG CALL SMARTFREN𝒄̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },        

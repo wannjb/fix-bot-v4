@@ -281,10 +281,11 @@ const sections = [
         {title: `💌 • SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
     ]
       },{
-        title: `${htki} BONUS FREE - PREM ${htka}`,
+        title: `${htki} BONUS OWNER - MEMBER (FREE - PREM) ${htka}`,
         rows: [
             {title: `✉️ • UNCHEK FREE`, rowId: ".akun", description: "Menampilkan rules akun unchek "},
             {title: `☠️ • SEND BUG`, rowId: ".sendbugs", description: "Menampilkan contoh penggunaan sendbug "},
+            {title: `😈 • TEROR SIM`, rowId: ".terorsim", description: "Menampilkan contoh penggunaan terorsim "},
         ]
       },{
         title: `${htki} SUPPORT ${htka}`,

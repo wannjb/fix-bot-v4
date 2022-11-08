@@ -17,17 +17,17 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 	let sections = [{
 		title: ' MENU BUG EKSTRIMS 💀',
 rows: [
-{ title: '😈⛓BUG SIM SIMPATI𝒇̶᭄࿐ꪶ😈', rowId: `${_p}${command} .unban` },
-{ title: '😈⛓BUG SIM TELKOMSEL𝒄̶̶̶᭄࿐ꪶ😈', rowId: `${_p}${command} .unban` },
-{ title: '😈⛓BUG SIM TRI𝒏̶᭄࿐ꪶ😈', rowId: `${_p}${command} .unban` },
-{ title: '😈⛓BUG SIM INDOSAT𝒌̶᭄࿐ꪶ😈', rowId: `${_p}${command} .unban` },
-{ title: '😈⛓BUG SIM SMARTFREN𝒈̶᭄࿐ꪶ😈', rowId: `${_p}${command} .unban` },
-{ title: '😈⛓BUG CALL SIMPATI𝒐̶᭄࿐ꪶ😈', rowId: `${_p}${command} .unban` },
-{ title: '😈⛓BUG CALL TRI࿐ꪶ😈', rowId: `${_p}${command} .unban` },
-{ title: '😈⛓BUG CALL TELKOMSEL࿐ꪶ😈', rowId: `${_p}${command} .unban` },
-{ title: '😈⛓BUG CALL INDOSAT࿐ꪶ😈', rowId: `${_p}${command} .unban` }, 
-{ title: '😈⛓BUG CALL SMARTFREN࿐ꪶ😈', rowId: `${_p}${command} .unban` },        
-{ title: '😈⛓BUG VIRTEX 1000+ SPAM࿐ꪶ😈', rowId: `${_p}${command} .unban` },]}]
+{ title: '😈⛓BUG SIM SIMPATI𝒇̶᭄࿐ꪶ😈', rowId: ".unban"` },
+{ title: '😈⛓BUG SIM TELKOMSEL𝒄̶̶̶᭄࿐ꪶ😈', rowId: ".unban"` },
+{ title: '😈⛓BUG SIM TRI𝒏̶᭄࿐ꪶ😈', rowId: ".unban"` },
+{ title: '😈⛓BUG SIM INDOSAT𝒌̶᭄࿐ꪶ😈', rowId: ".unban"` },
+{ title: '😈⛓BUG SIM SMARTFREN𝒈̶᭄࿐ꪶ😈', rowId: ".unban"` },
+{ title: '😈⛓BUG CALL SIMPATI𝒐̶᭄࿐ꪶ😈', rowId: ".unban"` },
+{ title: '😈⛓BUG CALL TRI࿐ꪶ😈', rowId: ".unban"` },
+{ title: '😈⛓BUG CALL TELKOMSEL࿐ꪶ😈',rowId: ".unban"` },
+{ title: '😈⛓BUG CALL INDOSAT࿐ꪶ😈', rowId: ".unban"` }, 
+{ title: '😈⛓BUG CALL SMARTFREN࿐ꪶ😈', rowId: ".unban"` },        
+{ title: '😈⛓BUG VIRTEX 1000+ SPAM࿐ꪶ😈', rowId: ".unban"` },]}]
     let listMessage = {
       text: 'HATI-HATI OWNER❗ Jangan di gunakan dengan sembarangan, karena fitur ini sangat berbahaya jangan anda mencoba memakai nomor hp anda disebabkan nomor anda diteror, nomor SIM anda akan mendapatkan *TERORAN ERROR* yang sangat tragis dan menyebabkan down atau disebut riset SIM. *GUNAKAN UNTUK RIPPER ATAU SCAMER!*. Terimakasih telah Membaca Owner WannTrue BOT',
       footer: '*➳😈⛓⚔w̆̈e̶ WannTrue࿐ꪶ😈',

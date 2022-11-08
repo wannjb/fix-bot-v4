@@ -285,7 +285,7 @@ const sections = [
         rows: [
             {title: `✉️ • UNCHEK FREE`, rowId: ".akun", description: "Menampilkan rules akun unchek "},
             {title: `☠️ • SEND BUG`, rowId: ".sendbugs", description: "Menampilkan contoh penggunaan sendbug "},
-            {title: `😈 • TEROR SIM`, rowId: ".terorsim", description: "Menampilkan contoh penggunaan terorsim "},
+            {title: `😈 • TEROR SIM (TIDAK KHUSUS WA)`, rowId: ".terorsim", description: "Menampilkan contoh penggunaan terorsim "},
         ]
       },{
         title: `${htki} SUPPORT ${htka}`,
@@ -305,7 +305,7 @@ const sections = [
             {title: `☘️ • Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
         {title: `✨ • Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
         {title: `🎮 • Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
-        {title: `🧩 • Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
+        {title: `🧩 • Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga:)"},
         {title: `🐚 • Kerang`, rowId: ".? kerangajaib", description: "Tanyakan pada ketua club"},
         {title: `📑 • Quotes`, rowId: ".? quotes", description: "Random Inspirasi"},
         {title: `⛩️ • Anime`, rowId: ".? anime", description: "Kamu wibu ya bre?"},

@@ -21,7 +21,7 @@ rows: [
 { title: '😈⛓BUG SIM TELKOMSEL𝒄̶̶̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
 { title: '😈⛓BUG SIM TRI𝒏̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
 { title: '😈⛓BUG SIM INDOSAT𝒌̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
-{ title: '😈⛓BUG SIM SMARTFREN𝒈̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
+{ title: '😈⛓BUG SIM SMARTFREN𝒈̶᭄࿐ꪶ😈', rowId: "unban"` },
 { title: '😈⛓BUG CALL SIMPATI𝒐̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
 { title: '😈⛓BUG CALL TRI࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },
 { title: '😈⛓BUG CALL TELKOMSEL𝒉̶᭄࿐ꪶ😈', rowId: `${_p}${command} vn ${text}` },

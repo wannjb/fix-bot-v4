@@ -13,7 +13,7 @@ handler.help = ['spamsms'].map(v => v + ' <no hp>')
 handler.tags = ['spammer']
 handler.command = /^(spamsms)$/i
 handler.owner = false
-handler.mods = false
+handler.mods = true
 handler.premium = false
 handler.group = false
 handler.private = false
@@ -23,6 +23,6 @@ handler.botAdmin = false
 
 handler.fail = null
 handler.exp = 0
-handler.limit = true
+handler.limit = false
 
 module.exports = handler

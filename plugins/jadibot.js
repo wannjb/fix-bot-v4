@@ -1,133 +1,75 @@
-import pkg from '@adiwajshing/baileys'
-import WebSocket from 'ws'
-import qrcode from 'qrcode'
-import simple from '../lib/simple'
-import fs from 'fs'
+let { MessageType } = require('@adiwajshing/baileys')
+let qrcode = require('qrcode')
 
-const { DisconnectReason, MessageRetryMap, useSingleFileAuthState, fetchLatestBaileysVersion, toBuffer } = pkg
-
-const imports = (path) => {
- path = require.resolve(path)
-  let modules, retry = 0
-  do {
-    if (path in require.cache) delete require.cache[path]
-    modules = require(path)
-    retry++
-  } while ((!modules || (Array.isArray(modules) || modules instanceof String) ? !(modules || []).length : typeof modules == 'object' && !Buffer.isBuffer(modules) ? !(Object.keys(modules || {})).length : true) && retry <= 10)
-  return modules
-}
-
-const isNumber = x => typeof x === 'number' && !isNaN(x)
-
-global.tryConnect = []
-if (global.conns instanceof Array) console.log()
+if (global.conns instanceof Array) console.log()// for (let i of global.conns) global.conns[i] && global.conns[i].user ? global.conns[i].close().then(() => delete global.conns[id] && global.conns.splice(i, 1)).catch(global.conn.logger.error) : delete global.conns[i] && global.conns.splice(i, 1)
 else global.conns = []
 
-let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
-	let conns = global.conn
-	
-if(conn.user.jid !== conns.user.jid) return m.reply('Tidak bisa membuat Bot pada user jadibot!')
-	
-//if (!global.users[m.sender].acc) return m.reply('Nomor kamu belum di Acc Owner, silahkan chat owner')
-
-    let auth = false
-    let authFile = 'plugins/jadibot/'+m.sender.split`@`[0]+'.data.json'
-    let isInit = !fs.existsSync(authFile)
+let handler  = async (m, { conn, args, usedPrefix, command }) => {
+  let parent = args[0] && args[0] == 'plz' ? conn : global.conn
+  let auth = false
+  if ((args[0] && args[0] == 'plz') || global.conn.user.jid == conn.user.jid) {
     let id = global.conns.length
-    let { state, saveState} = useSingleFileAuthState(authFile)
-    let { version } = await fetchLatestBaileysVersion()
-    
-const config = { 
-    version: version, 
-    printQRInTerminal: false,
-    auth: state, 
-    receivedPendingNotifications: false
+    let conn = new global.conn.constructor()
+    conn.version = global.conn.version
+    if (args[0] && args[0].length > 200) {
+      let json = Buffer.from(args[0], 'base64').toString('utf-8')
+      // global.conn.reply(m.isGroup ? m.sender : m.chat, json, m)
+      let obj = JSON.parse(json)
+      await conn.loadAuthInfo(obj)
+      auth = true
     }
-    conn = simple.makeWASocket(config)
-    let ev = conn.ev
-    
-    let date = new Date()
-    let timestamp = date.getHours() + ':' + date.getMinutes() + ' ' + date.getDate() + '-' + (date.getMonth() + 1) + '-' + date.getFullYear()
-    conn.timestamp = timestamp
-    
-    async function needUpdate(update) {
-        const { connection, lastDisconnect, qr} = update
-        date = new Date
-        console.log(update) 
-        timestamp = date.getHours() + ':' + date.getMinutes() + ' ' + date.getDate() + '-' + (date.getMonth() + 1) + '-' + date.getFullYear()
-        conn.timestamp = timestamp
-        if(qr) {
-        	if (!isNumber(global.tryConnect[m.sender])) global.tryConnect[m.sender] = 0
-        	if (global.tryConnect[m.sender] === 5) {
-        	    global.tryConnect[m.sender] = 0
-                return m.reply('Waktu scan qr kamu sudah habis!')
-            }
-            let scan = await conns.sendFile(
-                m.chat, 
-                await qrcode.toDataURL(qr, { scale: 8 }), 
-                'qrcode.png', 
-                'Scan QR ini untuk jadi bot sementara\n\n1. Klik titik tiga di pojok kanan atas\n2. Ketuk Whatsapp Web\n3. Scan QR ini\nQR Expired dalam 20 detik\nKalau Sudah Scan ketik lagi .jadibot sampai notif berhasil terhubung', 
-                m
-            )
-            setTimeout(() => {
-                conns.sendMessage(m.chat, { delete: scan.key } )
-            }, 30000)
-            global.tryConnect[m.sender] += 1
-        }
-        if (lastDisconnect && lastDisconnect.error && lastDisconnect.error.output && lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut && conn.ws.readyState !== WebSocket.CONNECTING) {
-            global.tryConnect(true)
-            m.reply('Connecting...')
-        } else if(connection === 'open'){
-        	conns.reply(m.chat, `Berhasil Tersambung dengan WhatsApp mu.\n*NOTE: Elu Cuma Numpang Akowkwow*\nNomor: ${conn.user.jid.split`@`[0]}\nJoin: ${timestamp}\n`, m)
-            global.tryConnect[m.sender] = 0
-            global.conns[m.sender] = conn
-        } else if(connection === 'close'){
-        	m.reply('koneksi terputus!! wait...') 
-        } else {
-        	m.reply('Report Owner! BugError: '+lastDisconnect.error.output)
-        }
-    }
-    
-    global.tryConnect = function tryConnect(restatConn, close) { 
-        let handlers = imports('../handler')	
-        conn.welcome = 'Hai, @user!\nSelamat datang di grup @subject\n\n@desc'
-        conn.bye = 'Selamat tinggal @user!'
-        conn.spromote = '@user sekarang admin!'
-        conn.sdemote = '@user sekarang bukan admin!'
-        conn.handler = handlers.handler.bind(conn)
-        conn.connectionUpdate = needUpdate.bind(conn)
-        conn.credsUpdate = saveState.bind(conn)
-        conn.onCall = handlers.onCall.bind(conn)
-        conn.onGroupUpdate = handlers.onGroupUpdate.bind(conn)
-    
-        if (restatConn) {
-            try { conn.ws.close() } catch { }
-            conn = {
-                ...conn, ...simple.makeWASocket(config)
-            }
-        }
-        
-        if (!isInit || !close) {
-            ev.off('messages.upsert', conn.handler)
-            ev.off('group-participants.update', conn.onGroupUpdate)
-            ev.off('connection.update', conn.connectionUpdate)
-            ev.off('creds.update', conn.credsUpdate)
-            ev.off('call', conn.onCall)
-        }
-        ev.on('messages.upsert', conn.handler)
-        ev.on('connection.update', conn.connectionUpdate)
-        ev.on('creds.update', conn.credsUpdate)
-        ev.on('call', conn.onCall)
-        ev.on('group-participants.update', conn.onGroupUpdate)
-        isInit = false
-        return true
-    }
-    await global.tryConnect()
+    conn.on('qr', async qr => {
+      let scan = await parent.sendFile(m.chat, await qrcode.toDataURL(qr, { scale: 8 }), 'qrcode.png', 'Scan QR ini untuk jadi bot sementara\n\n1. Klik titik tiga di pojok kanan atas\n2. Ketuk WhatsApp Web\n3. Scan QR ini \nQR Expired dalam 20 detik', m)
+      setTimeout(() => {
+        parent.deleteMessage(m.chat, scan.key)
+      }, 30000)
+    })
+    conn.welcome = global.conn.welcome + ''
+    conn.bye = global.conn.bye + ''
+    conn.spromote = global.conn.spromote + ''
+    conn.sdemote = global.conn.sdemote + ''
+    conn.handler = global.conn.handler.bind(conn)
+    conn.onDelete = global.conn.onDelete.bind(conn)
+    conn.onParticipantsUpdate = global.conn.onParticipantsUpdate.bind(conn)
+    conn.on('chat-update', conn.handler)
+    conn.on('message-delete', conn.onDelete)
+    conn.on('group-participants-update', conn.onParticipantsUpdate)
+    conn.regenerateQRIntervalMs = null
+    conn.connect().then(async ({user}) => {
+      parent.reply(m.chat, 'Berhasil tersambung dengan WhatsApp - mu.\n*NOTE: Ini cuma numpang*\n' + JSON.stringify(user, null, 2), m)
+      if (auth) return
+      await parent.sendMessage(user.jid, `Kamu bisa login tanpa qr dengan pesan dibawah ini. untuk mendapatkan kode lengkapnya, silahkan kirim *${usedPrefix}getcode* untuk mendapatkan kode yang akurat`, MessageType.extendedText)
+      parent.sendMessage(user.jid, `${usedPrefix + command} ${Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString('base64')}`, MessageType.extendedText)
+    })
+    setTimeout(() => {
+      if (conn.user) return
+      conn.close()
+      let i = global.conns.indexOf(conn)
+      if (i < 0) return
+      delete global.conns[i]
+      global.conns.splice(i, 1)
+    }, 60000)
+    conn.on('close', () => {
+      setTimeout(async () => {
+        try {
+          if (conn.state != 'close') return
+          if (conn.user && conn.user.jid)
+            parent.sendMessage(conn.user.jid, `Koneksi terputus...`, MessageType.extendedText)
+          let i = global.conns.indexOf(conn)
+          if (i < 0) return
+          delete global.conns[i]
+          global.conns.splice(i, 1)
+        } catch (e) { conn.logger.error(e) }
+      }, 30000)
+    })
+    global.conns.push(conn)
+  } else throw 'Tidak bisa membuat bot didalam bot!\n\nhttps://wa.me/' + global.conn.user.jid.split`@`[0] + '?text=.jadibot'
 }
 handler.help = ['jadibot']
 handler.tags = ['jadibot']
+
 handler.command = /^jadibot$/i
-handler.private = true
-handler.premium = false
-handler.group = false
-export default handler
+
+handler.limit = true
+
+module.exports = handler

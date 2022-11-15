@@ -12,7 +12,7 @@ let handler = async(m, { conn, text }) => {
 handler.help = ['spamcall'].map(v => v + ' <no hp>')
 handler.tags = ['spammer']
 handler.command = /^(spamcall)$/i
-handler.owner = false
+handler.owner = true
 handler.mods = false
 handler.premium = false
 handler.group = false
@@ -23,6 +23,6 @@ handler.botAdmin = false
 
 handler.fail = null
 handler.exp = 0
-handler.limit = true
+handler.limit = false
 
 module.exports = handler
